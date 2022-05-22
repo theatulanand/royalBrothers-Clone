@@ -1,0 +1,88 @@
+#footer{
+    background-color: rgb(35, 32, 28);
+
+}
+#footer-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-gap: 50px;
+   
+}
+
+#footer-container > div>h2{
+    color: white;
+}
+#footeremail-img>img{
+    width: 30px;
+    height: 20px;
+}
+#footer-ul{
+    width: 100px;
+    margin-right: 900px;
+    margin-top: -20px;
+    color: rgb(27, 205, 95);
+}
+#footer-mail{
+    display: flex;
+    color: white;
+    margin-top: 40px;
+}
+#footer-call{
+    display: flex;
+    color: white;
+}
+#footer-company>p{
+    color:rgb(223, 217, 217);
+}
+#footersecond-part{
+  
+     background-color: rgb(51, 50, 48);
+}
+
+#secondpart-one{
+    width: 85%;
+    margin: auto;
+    
+}
+#secondpart-one>h1{
+    
+    color: rgb(249, 240, 240);
+    padding-top: 50px;
+
+}
+#secondpart-one>p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+}
+#secondpart-second{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+#secondpart-second>div>h1{
+    text-align: center;
+    color: rgb(249, 240, 240);
+}
+#secondpart-second>div>hr{
+    color: white;
+    height: 2px;
+    width: 90px;
+    margin-top: -18px;
+    
+}
+#secondpart-second>div>p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+#secondpart-h3{
+    color: aliceblue;
+    text-align: center;
+    margin-top: -25px;
+    padding-bottom: 20px;
+}
