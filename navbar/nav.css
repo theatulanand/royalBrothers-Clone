@@ -59,3 +59,26 @@ body{
 #navLoginSignup #login:hover{
     background-color: #9999;
 }
+
+#navLocation{
+    width: auto;
+    /* border: 1px solid red; */
+    text-align: center;
+    border: 1px solid #fed250;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    height: 40px;
+    padding-right: 15px;
+}
+
+#navLocation:hover{
+    background-color: #fed250;
+}
+
+#navLocation button{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+}
