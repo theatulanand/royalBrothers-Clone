@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Muli", sans-serif;
 }
 
 
@@ -22,32 +23,60 @@
 }
 
 
-#main div{
+#main > div{
     display: flex;
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid grey;
-    align-items: center;
-    padding: 8px;
+    border: 1px solid rgb(226, 213, 213);
+    align-items: stretch;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 2.5rem;
 }
 
 #main div img{
     width: 250px;
 }
 
-#main div div{
+.days_div{
     margin-top: 10px;
+    border: 1px solid black;
+    flex: auto;
+    padding: 15px;
+    border-radius: 0px;
 }
 
-#main div div ul{
+.days_div_element{
     display: flex;
     flex-direction: row;
     text-decoration: none;
     gap: 20px;
     width: 100%;
+    list-style-type: none;
+    justify-content: space-around;
 }
 
-ul{
-    list-style-type: none;
+ul li:hover{
+    cursor: pointer;
+}
+
+.active{
+    border-bottom: yellow 5px solid;
+    background-color: pink;
+    cursor: pointer;
+}
+
+button{
+    background-color: #fed250;
+    padding: 10px;
+    letter-spacing: .5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
