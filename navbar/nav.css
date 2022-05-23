@@ -1,14 +1,19 @@
 body{
     font-family: "Muli", sans-serif;
+    margin: 0px;
 }
 #navbarContainer{
     display: flex;
-    width: 98%;
+    width: 100%;
     /* padding: 10px; */
     justify-content: space-between;
     /* border: 1px solid red; */
     margin: auto;
     color: #333;
+    margin-top: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: fixed;
+    background-color: white;
 }
 
 #navLogoDiv{
@@ -81,4 +86,52 @@ body{
     background-color: transparent;
     border: none;
     font-size: 15px;
+}
+
+/* header section start */
+
+#headerContainer {
+    margin-top: 3px;
+    width: 90%;
+    background-image: url("https://d36g7qg6pk2cm7.cloudfront.net/assets/new_bikes_banner_web-7a9cd433b72992a1c7674146a0b00e463f1df138048fdd067705e88bf2d99861.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 570px;
+    padding-top: 14%;
+    padding-left: 10%;
+}
+
+
+#headerContainer #header{
+    background: white;
+    width: 23%;
+    padding: 40px 40px 40px 40px;
+    border-radius: 10px;
+}
+#headerContainer #header input{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 40%;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #9999;
+    border-radius: 5px;
+}
+
+#headerContainer #header label{
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#headerContainer #header #headerButton{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #fed250;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
 }
