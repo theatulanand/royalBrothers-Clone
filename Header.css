@@ -1,0 +1,84 @@
+body{
+    font-family: "Muli", sans-serif;
+}
+#navbarContainer{
+    display: flex;
+    width: 98%;
+    /* padding: 10px; */
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin: auto;
+    color: #333;
+}
+
+#navLogoDiv{
+    cursor: pointer;
+}
+
+#navOptions{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+#navOptions div{
+    padding: 20px;
+}
+#navOptions div:hover{
+    cursor: pointer;
+    background-color: #fed250;
+}
+#navLoginSignup{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 40%;
+    justify-content: space-between;
+    padding: 13px;
+    align-items: center;
+}
+#navRight{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 30%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#navLoginSignup #signup{
+    background-color: #fed250;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#navLoginSignup #login{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#navLoginSignup #login:hover{
+    background-color: #9999;
+}
+#header>div>img{
+    width: 100%;
+    height: 600px;
+}
+#header>#ride_calender{
+    margin-top: -440px;
+    margin-left: 150px;
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#button{
+    width: 19%;
+    border-radius: 10px;
+    background-color: #fed250;
+    font-weight: bold;
+    border: #fed250;
+    font-size: medium;
+}
+:hover>#button{
+    background-color: orange;
+}
+input{
+    height: 30px;
+}
