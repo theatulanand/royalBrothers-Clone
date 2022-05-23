@@ -1,45 +1,47 @@
 #footer{
-    background-color: rgb(35, 32, 28);
-
+    background-color: rgb(49, 48, 48);
 }
-#footer-container{
+
+#footerfirst-part{
     width: 80%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto;
-    grid-gap: 50px;
-   
+    padding-top: 50px;
+    grid-template-columns: repeat(3,1fr);
 }
 
-#footer-container > div>h2{
-    color: white;
+#footerfirst-part>div>p{
+    color: aliceblue;
 }
-#footeremail-img>img{
-    width: 30px;
-    height: 20px;
-}
-#footer-ul{
-    width: 100px;
-    margin-right: 900px;
+#footerfirst-part>div>hr{
+    width: 60px;
+    height: 2px;
+    background-color: hsl(66, 97%, 53%);
     margin-top: -20px;
-    color: rgb(27, 205, 95);
+    margin-left: -2px;
+    margin-bottom: 40px;
 }
-#footer-mail{
-    display: flex;
-    color: white;
-    margin-top: 40px;
+#footerfirst-part>div>h3{
+    color: rgb(205, 211, 216);
 }
-#footer-call{
-    display: flex;
-    color: white;
+
+#footer-logo{
+display: flex;
 }
-#footer-company>p{
-    color:rgb(223, 217, 217);
+#footer-logo>img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 14px;
+}
+.footer-bold{
+    font-weight: bold;
+    font-size : 22px;
+    color: aliceblue;
+    cursor: pointer;;
 }
 #footersecond-part{
   
-     background-color: rgb(51, 50, 48);
+    background-color: rgb(69, 68, 67);
 }
 
 #secondpart-one{
@@ -72,6 +74,7 @@
     height: 2px;
     width: 90px;
     margin-top: -18px;
+    background-color: hsl(66, 97%, 53%);;
     
 }
 #secondpart-second>div>p{
