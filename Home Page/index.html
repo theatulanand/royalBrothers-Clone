@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nav Bar</title>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="./nav.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -70,6 +70,21 @@
 
         </div>
     </div>
+        <!-- Header Section Start -->
+        <div id="headerContainer">
+            <div id="header">
+                <form action="">
+                    <h2>Search your next ride</h2>
+                    <label>Pickup</label><br>
+                    <input placeholder="Date" onfocus="(this.type='date')">
+                    <input placeholder="Time" onfocus="(this.type='time')"><br>
+                    <label>Dropoff</label><br>
+                    <input placeholder="Date" onfocus="(this.type='date')">
+                    <input placeholder="Time" onfocus="(this.type='time')"><br>
+                    <input type="button" value="Search" id="headerButton">
+                </form>
+            </div>
+        </div>
 </body>
-<script src="./nav.js"></script>
+<script src="./index.js"></script>
 </html>
