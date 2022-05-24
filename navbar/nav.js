@@ -1,3 +1,6 @@
+    
+    document.getElementById("location").innerText = localStorage.getItem("cityName")
+    
     // modal data 
     const cityData = []
 
@@ -47,7 +50,7 @@
         cityDiv.addEventListener("click", function () {
             localStorage.setItem("cityName", ele.name);
             modal.style.display = "none";
-            document.getElementById("location").innerText = localStorage.getItem("cityName")
+            document.getElementById("location").innerText = localStorage.getItem("cityName");
         })
 
         document.getElementById("modelCity").append(cityDiv)

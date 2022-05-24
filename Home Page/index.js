@@ -1,3 +1,6 @@
+    
+    document.getElementById("location").innerText = localStorage.getItem("cityName")
+    
     // modal data 
     const cityData = []
 
