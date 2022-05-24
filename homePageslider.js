@@ -1,6 +1,6 @@
 const sliderImages = [
-    "./images/cities.png",
-    "./images/rating.png",
+    "https://github.com/theatulanand/royalBrothers-Clone/blob/chinni/images/cities.png?raw=true",
+    "https://github.com/theatulanand/royalBrothers-Clone/blob/chinni/images/rating.png?raw=true",
     "images/bike.png",
    
     
