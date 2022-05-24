@@ -5,8 +5,11 @@ export const getData = async(url) => {
 }
 
 let days = ["HOURLY", "7 DAYS", "15 DAYS", "30 DAYS"]
+let booking_form = document.getElementById("form_wrapper")
+let main_page = document.getElementById("main")
 
 export const displayData = (data, parentNode) => {
+    booking_form.style.display = "none"
     data.forEach(el => {
     
     let div = document.createElement("div")
@@ -93,12 +96,13 @@ export const displayData = (data, parentNode) => {
     let btn = document.createElement("button")
     btn.innerHTML = "BOOK NOW"
     btn.addEventListener("click", function(){
-        
+        booking_form.style.display = "flex";
+        // main_page.style.opacity = 0.1
+
     })
 
     div.append(title, bike_img, days_div, innerDiv, weekends, extras, btn)
     parentNode.append(div)
-
     });
     
 }

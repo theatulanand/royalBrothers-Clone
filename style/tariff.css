@@ -20,6 +20,7 @@
     row-gap: 25px;
     margin: 10px 150px;
     padding: 10px;  
+    position: relative;
 }
 
 
@@ -62,7 +63,7 @@ h1{
     text-align: center;
     align-items: center;
     white-space: nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 ul li:hover{
@@ -111,3 +112,73 @@ li{
 h4{
     font-size: 0.9rem;
 }
+
+#form_wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 0.377);
+    z-index: 100;
+    display: grid;
+    place-items: center;
+    justify-content: space-around;
+}
+
+#booking_form{
+    width: 400px;
+    height: 340px; 
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-shadow: 0rem 0rem 0.2667rem 0rem rgb(249, 249, 249);
+    text-align: left;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    /* opacity: 1; */
+    /* z-index: 1003;
+    position: fixed;
+    top: 150px;
+    left: 550px; */
+    top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+#booking_form input{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(228, 224, 224);
+    margin-bottom: 25px;
+}
+
+#calender{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#time{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#booking_form div{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+#time { 
+    padding: 15px; 
+}
+
+#submit{
+    background-color: #fed250;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
