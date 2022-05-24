@@ -1,0 +1,58 @@
+#navbar-container{
+    display: flex;
+    width: 98%;
+    /* padding: 10px; */
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin: auto;
+    color: #333;
+}
+
+#navLogoDiv{
+    cursor: pointer;
+}
+
+#navOptions{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+#navOptions div{
+    padding: 20px;
+}
+#navOptions div:hover{
+    cursor: pointer;
+    background-color: #fed250;
+}
+#navLoginSignup{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 40%;
+    justify-content: space-between;
+    padding: 13px;
+    align-items: center;
+}
+#navRight{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 30%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#navLoginSignup #signup{
+    background-color: #fed250;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#navLoginSignup #login{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#navLoginSignup #login:hover{
+    background-color: #9999;
+}

@@ -16,9 +16,9 @@
 #main{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    column-gap: 50px;
+    column-gap: 45px;
     row-gap: 25px;
-    margin: 10px 50px;
+    margin: 10px 150px;
     padding: 10px;  
 }
 
@@ -28,11 +28,12 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid rgb(226, 213, 213);
-    align-items: stretch;
+    border: 1px solid rgb(242, 239, 239);
     padding-top: 10px;
     border-radius: 10px;
+    gap: 10px;
 }
+
 
 h1{
     font-size: 2.5rem;
@@ -40,34 +41,46 @@ h1{
 
 #main div img{
     width: 250px;
+    align-self: center;
 }
 
 .days_div{
     margin-top: 10px;
-    border: 1px solid black;
     flex: auto;
-    padding: 15px;
-    border-radius: 0px;
+    text-align: center;
+    padding: 2px;
+    box-shadow: 0rem 0rem 0.2667rem 0rem rgb(190, 190, 187);
 }
 
 .days_div_element{
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    gap: 20px;
+    gap: 2px;
     width: 100%;
     list-style-type: none;
-    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
 }
 
 ul li:hover{
     cursor: pointer;
 }
 
+ul li{
+    padding: 10px;
+}
+
 .active{
-    border-bottom: yellow 5px solid;
-    background-color: pink;
+    border-bottom:0.2rem #fad946 solid;
+    background-color: rgba(238,110,115,0.7);
     cursor: pointer;
+}
+
+ul li:first-child{
+    border-bottom: 0.2rem #fdd835 solid;
 }
 
 button{
@@ -79,4 +92,22 @@ button{
     cursor: pointer;
     outline: none;
     border: none;
+}
+
+
+td{
+    padding: 0 25px;
+    font-size: 12px;
+}
+
+h5{
+    font-size: 0.8rem;
+}
+
+li{
+    font-size: 0.8rem;
+}
+
+h4{
+    font-size: 0.9rem;
 }
