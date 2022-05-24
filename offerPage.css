@@ -7,12 +7,26 @@ body{
 #offerPageBike>div>img{
     width: 100%;
 }
-
-
+#offerPageBike{
+    display: flex;
+    flex-direction: column;
+}
+#offerPageBike>#offerAllepy{
+    background-color: rgba(35, 25, 25, 0.521);
+    margin-top: -60px;
+    text-align: center;
+    padding: -10px;
+    height: 58px;
+}
+#offerAllepy h2{
+    padding-bottom: -30px;
+    color: white;
+}
 #offerPageGrid{
     width: 80%;
     margin: auto;
     display: grid;
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
     grid-gap: 50px;
     margin-top: 30px;
