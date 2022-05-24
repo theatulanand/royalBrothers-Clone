@@ -100,7 +100,7 @@ body {
 
 /* The Modal (background) */
 .modal {
-    display: block;
+    display: none;
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
