@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
-    <link rel="stylesheet" href="./homePageSlider.css"
+    <link rel="stylesheet" href="./homePageSlider.css">
 </head>
 <body>
     <h1 style="text-align: center;margin-bottom: -10px;">WE BELIEVE IN QUALITY</h1>
@@ -14,4 +14,43 @@
     <div id="sliderContainer"></div>
 </body>
 </html>
-<script src="./homePageSlider.js"></script>
+<script>
+
+    const sliderImages = [
+    "https://github.com/theatulanand/royalBrothers-Clone/blob/chinni/images/cities.png?raw=true",
+    "https://github.com/theatulanand/royalBrothers-Clone/blob/chinni/images/rating.png?raw=true",
+    "images/bike.png",
+   
+    
+]
+
+
+
+const sliderContainer = document.querySelector("#sliderContainer");
+
+function slidestart(){
+    var count = 0;
+ setInterval(function(){
+     sliderContainer.innerHTML = null;
+    if(count===sliderImages.length){
+        count=0;
+    }
+    const sliderBox = document.createElement("div");
+    sliderBox.setAttribute("id","sliderDiv");
+    
+    const sliderimg = document.createElement("img");
+    sliderimg.src = sliderImages[count];
+
+    sliderimg.setAttribute("id","sliderimg");
+
+    sliderBox.append(sliderimg);
+
+    sliderContainer.append(sliderBox);
+    count++;
+
+ },1500)
+   
+}
+slidestart();
+
+</script>

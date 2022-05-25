@@ -4,93 +4,332 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Subscription</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="subscription.css">
 </head>
 <body>
+
+    <div id="navbarContainer">
+        <div id="navLogoDiv">
+            <img src="https://i.ibb.co/WK768hX/download.png" alt="logo" id="navLogo">
+        </div>
+        <div id="navOptions">
+            <div>
+                <img style="width: 54px;"
+                    src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/RBX_logo-7618eb109a17dcfa44e88596c831606746fc124a000553458d6b7fc1bf9a6345.png"
+                    alt="">
+            </div>
+            <div>Tarrif</div>
+            <div style="display: flex;">What's new &nbsp;
+                <i class="fa fa-angle-down"> </i>
+            </div>
+            <div>Careers</div>
+            <div>Offers</div>
+            <div style="display: flex;">Partner with us &nbsp;
+                <i class="fa fa-angle-down"> </i>
+            </div>
+        </div>
+        <div id="navRight">
+            <div id="navLoginSignup">
+                <div id="login">Login</div>
+                <div id="signup">Signup</div>
+            </div>
+            <div id="navLocation" style="cursor: pointer;">
+                <img src="https://i.ibb.co/N160zRK/location.png" alt="">
+                <button>
+                    <p id="location">Banglore</p>
+                </button>
+                <i class="fa fa-angle-down"></i>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modelTop">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/logo-b03af389c15608bf4fa52378f448a48a9c8f92f70242cc88340e971e7599d6ae.png"
+                        alt="">
+                    <p style="font-weight: 300;"> | &nbsp; Rental Bike</p>
+                </div>
+                <div id="modelSearch">
+                    <div id="searchicon">
+                        <img src="https://i.ibb.co/4MPMFh4/search.png" alt="">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Search or type city to select">
+                    </div>
+                </div>
+                <div id="modelCity">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- calender part -->
 
-    <div id="subscription-container">
-        <div id="inside-container">
-            <form action="">
-                <h2>DELIVERY DATE</h2>
-                <input type="date">
-                <input type="time">
-                <input type="button" value="Search" id = "button" onclick="searchForBike()">
-              </form>
+    <div id="main" style="padding-top: 75px;">
+        <div id="subscription-container">
+            <div id="inside-container">
+                <form action="">
+                    <h2>DELIVERY DATE</h2>
+                    <input placeholder="Date" onfocus="(this.type = 'date')">
+                    <input placeholder="Time" onfocus="(this.type = 'time')">
+                    <input type="button" value="Search" id = "button" onclick="searchForBike()">
+                  </form>
+                </div>
+        </div>
+    
+        <!-- below calender part -->
+    
+        <div id="howit-works">
+            <h2>HOW IT WORKS</h2>
+            <hr>
+            <div id="howit-works-inside">
+    
+            <div>
+                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_scooter-340840f2aa3263cef93a01a80ae023a2022c50e9b0294492bc991348859c82ec.png">
+                <p>Select your ride</p>
+            </div>
+    
+            <div>
+                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_deposit-a2db02190834c271e9cbe48e0f26e22e6099769c9ade8886ba6fb4e44a6ffc98.png">
+                <p>Pay deposit & booking
+                    amount for first month</p>
+            </div>
+    
+            <div>
+                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_kyc-8422dfb7da6bac4e7bbc8ef8908c3a8063fb02a4c5a7a95aad15a9b11a4f1150.png">
+                <p>Get KYC approved online
+                    & start riding</p>
+            </div>
+    
+            <div>
+                <img  src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_rent-ba691edeb88c3c0f8ffb1b70148122e48b37d148f421511383c07e2387cf5a5e.png">
+    
+                <p>Pay for upcoming
+                    months at the start
+                    of every month</p>
+            </div>
+    
+            <div>
+                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_exchange-ddece91b095998b3b4783edb0f53c65431350248da8ee437b58843e647e961fa.png">
+                <p>Our team will service the
+                vehicle periodically at no cost</p>
+            </div>
+    
+            </div>
+    
+        </div>
+    
+    <!-- why rent for -->
+    
+            <h2 style="text-align:center">Why rent fromus?</h2>
+    
+            <div id="whyrent">
+            <div>
+                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/freedom-4181bdd49f6b25fbfc20c87362163cfb6ec16bc822079e14382f8f0aeb5e7470.jpg">
+                <h3>True travel freedom</h3>
+                <p style="width: 350px;">Our quality vechicles,reliable service & unbeatable choice.</p>
+    
+            </div>
+    
+            <div>
+                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/convinient-f602dcca9636d57d0f4429e1dff654408400248819e10ba338a98058785f4b4d.jpg">
+                <h3>Safe & convinient</h3>
+                <p>With increasing social distancing measures,public transport poses great risks.</p>
+    
+            </div>
+    
+            <div>
+                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/maintainence-d19ba04b2340287ab6ce1327a4d8cbd98ca0b2c8e053c795f600b9dfc39fd763.jpg">
+                <h3>Zero maintenance </h3>
+                <p>No hassels of paperwork,regular maintanance at no extra cost &24/7 roadside.</p>
+            </div>
+    
             </div>
     </div>
 
-    <!-- below calender part -->
+    <!-- footer start -->
+    <div id="footer" style="margin-top: 20px;">
+        <div id="footerfirst-part">
+            <div >
+                <h3 style = "font-size: 17px">ROYAL BROTHERS</h3>
+                <hr>
+                <img
+                    src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/white-mail-f7a800f328eab451231c558115ad0067bdd6c5ba04b7acd19f22ae4036e702d1.png">
+                <p style="margin-top: -23px;margin-left:50px;color: aliceblue;"> support@royalbrothers.com</p>
+                <img
+                    src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/white-phone-d7daea12563d63fb4bd1cbb2fa0a824d19501def56934aff125e23343912895e.png">
+                <p style="margin-top: -23px;margin-left:50px;color: aliceblue;">+917795687594/+919019595595</p>
+            </div>
 
-    <div id="howit-works">
-        <h2>HOW IT WORKS</h2>
-        <hr>
-        <div id="howit-works-inside">
+            <div style=" margin-left: -90px;">
+                <h3 style = "font-size: 17px">COMPANY</h3>
+                <hr>
+                <p style="font-size: 15px;">About Us</p>
+                <p style="font-size: 15px;">Blog</p>
+                <p style="font-size: 15px;">Careers </p>
+                <p style="font-size: 15px;">Contact Us</p>
+            </div>
 
-        <div>
-            <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_scooter-340840f2aa3263cef93a01a80ae023a2022c50e9b0294492bc991348859c82ec.png">
-            <p>Select your ride</p>
-        </div>
-
-        <div>
-            <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_deposit-a2db02190834c271e9cbe48e0f26e22e6099769c9ade8886ba6fb4e44a6ffc98.png">
-            <p>Pay deposit & booking
-                amount for first month</p>
-        </div>
-
-        <div>
-            <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_kyc-8422dfb7da6bac4e7bbc8ef8908c3a8063fb02a4c5a7a95aad15a9b11a4f1150.png">
-            <p>Get KYC approved online
-                & start riding</p>
-        </div>
-
-        <div>
-            <img  src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_rent-ba691edeb88c3c0f8ffb1b70148122e48b37d148f421511383c07e2387cf5a5e.png">
-
-            <p>Pay for upcoming
-                months at the start
-                of every month</p>
-        </div>
-
-        <div>
-            <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_exchange-ddece91b095998b3b4783edb0f53c65431350248da8ee437b58843e647e961fa.png">
-            <p>Our team will service the
-            vehicle periodically at no cost</p>
-        </div>
+            <div>
+                <h3 style = "font-size: 17px">POLICIES</h3>
+                <hr>
+                <p style="font-size: 15px;">Privacy Policy</p>
+                <p style="font-size: 15px;">Terms & Conditions</p>
+            </div>
 
         </div>
 
+        <div id="footerfirst-part">
+            <div style="font-size: 17px;  width: 200px;">
+                <h3 style="font-size: 17px; ">QUICK LINKS</h3>
+                <hr>
+                <p style="font-size: 15px;">Tariff</p>
+                <p style="font-size: 15px;">Offers</p>
+                <p style="font-size: 15px;">Own a franchise</p>
+                <p style="font-size: 15px;">Earn with us</p>
+                <p style="font-size: 15px;">Indian bike routes</p>
+
+            </div>
+
+            <div>
+                <h3 style = "font-size: 17px">FOLLOW US</h3>
+                <hr>
+                <div id="footer-logo">
+                    <img
+                        src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Insta-e068316ffc568b3c0162ef129542c4ec473fedb2317cc8132168a07a0616b475.png">
+                    <img
+                        src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Facebook-ad24f92a1479ca4c5b308092f11f91d3ad2189d505ba2a737f376943a89b721b.png">
+                    <img
+                        src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Linkedin-685bfa4464dc2263601740aad98014e02801299c7f2104be70458ac13d061fa1.png">
+                    <img
+                        src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Youtube-35dbc9202b8e7b71d09c782934215b9f6a78a1b3b11d190b5ad275c004484295.png">
+                </div>
+            </div>
+
+            <div style=" margin-left: -40px;">
+                <h3 style = "font-size: 17px">DOWNLOAD OUR APP</h3>
+                <hr>
+                <div id="footerdownload-app" style="">
+                    <img style="margin-right: 50px;"
+                        src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/app_store-4407bc8ced0d52a50ff042ce51e32d51de3e11717955798ec54c6a28e7926c7c.png">
+                    <img
+                        src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/play_store-057f9061b4cd0fd4953a485569c15e63fdf8d89b0bcc025c04cfb34d9e8cd571.png">
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="footersecond-part">
+            
+            <div id="secondpart-second" style="padding-top: 20px;">
+                <div>
+                    <h1 id = "ourPresence">OUR PRESENCE</h1>
+                    <hr>
+                    </hr>
+                    <p>Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Ahmedabad . </span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Alleppey.</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold"> Amritsar. </span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Andaman Nicobar.</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Bangalore .</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Bangalore Airport .</span>
+                        Bikes for rent in<span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold"> Bangkok .</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Belagavi.</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Bhubaneswar</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold"> Bhuj</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Calicut</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Chandigarh</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold"> Chennai</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Chikmagalur</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Cochin</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Coimbatore</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Coorg - Kushalnagar.</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Coorg - Madikeri.</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Davanagere .</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Delhi </span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Dharamshala .</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold">Ganapati</span>
+                        Bikes for rent in <span class="footer-bold"> pule .</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold"> Gandhinagar .</span>
+                        Bikes for rent in <span class="footer-bold">Agra .</span>
+                        Bikes for rent in <span class="footer-bold"> Goa . </span>
+                        Bikes for rent in <span class="footer-bold"> .Guntur </span>
+                        Bikes for rent in <span class="footer-bold"> Gurugram .</span>
+                        Bikes for rent in <span class="footer-bold"> Guwahati .</span>
+                        Bikes for rent in <span class="footer-bold"> Hubli-Dharwad .</span>
+                        Bikes for rent in <span class="footer-bold"> Hyderabad .</span>
+                        Bikes for rent in <span class="footer-bold"> Indore .</span>
+                        Bikes for rent in <span class="footer-bold"> Jaipur .</span>
+                        Bikes for rent in <span class="footer-bold"> Jaisalmer .</span>
+                        Bikes for rent in <span class="footer-bold"> Jodhpur .</span>
+                        Bikes for rent in <span class="footer-bold"> Kolkata .</span>
+                        Bikes for rent in <span class="footer-bold"> Konark .</span>
+                        Bikes for rent in <span class="footer-bold"> Lucknow .</span>
+                        Bikes for rent in <span class="footer-bold"> Manali .</span>
+                        Bikes for rent in <span class="footer-bold"> Mangalore .</span>
+                        Bikes for rent in <span class="footer-bold"> Mohali .</span>
+                        Bikes for rent in <span class="footer-bold"> Mount Abu .</span>
+                        Bikes for rent in <span class="footer-bold"> Mumbai .</span>
+                        Bikes for rent in <span class="footer-bold"> Mysore.</span>
+                        Bikes for rent in <span class="footer-bold">Nashik .</span>
+                        Bikes for rent in <span class="footer-bold"> Ooty .</span>
+                        Bikes for rent in <span class="footer-bold">Pondicherry .</span>
+                        Bikes for rent in <span class="footer-bold"> Pune .</span>
+                        Bikes for rent in <span class="footer-bold"> Puri .</span>
+                        Bikes for rent in <span class="footer-bold">Ranchi .</span>
+                        Bikes for rent in <span class="footer-bold"> Rishikesh .</span>
+                        Bikes for rent in <span class="footer-bold">Sakleshpur .</span>
+                        Bikes for rent in <span class="footer-bold"> Siliguri .</span>
+                        Bikes for rent in <span class="footer-bold">Srinagar .</span>
+                        Bikes for rent in <span class="footer-bold"> Surat .</span>
+                        Bikes for rent in <span class="footer-bold"> Tirupati .</span>
+                        Bikes for rent in <span class="footer-bold"> Trivandrum .</span>
+                        Bikes for rent in <span class="footer-bold">Udaipur .</span>
+                        Bikes for rent in <span class="footer-bold"> Udupi - manipal .</span>
+                        Bikes for rent in <span class="footer-bold">Vijayawada .</span>
+                        Bikes for rent in <span class="footer-bold">Vizag .</span>
+                        Bikes for rent in <span class="footer-bold"> Wayanad .</span> </p>
+                </div>
+
+            </div>
+        </div>
+
+        <h3 id="secondpart-h3">Made with <img style="margin-bottom: -8px; font-size: 20px;"
+                src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/like-b8b570f724101252e5c39d8bd66246607fb226e93e3ba17b0516209b20832345.png">
+            by team Royal Brothers</h3>
     </div>
-
-<!-- why rent for -->
-
-        <h2 style="text-align:center">Why rent fromus?</h2>
-
-        <div id="whyrent">
-        <div>
-            <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/freedom-4181bdd49f6b25fbfc20c87362163cfb6ec16bc822079e14382f8f0aeb5e7470.jpg">
-            <h3>True travel freedom</h3>
-            <p style="width: 350px;">Our quality vechicles,reliable service & unbeatable choice.</p>
-
-        </div>
-
-        <div>
-            <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/convinient-f602dcca9636d57d0f4429e1dff654408400248819e10ba338a98058785f4b4d.jpg">
-            <h3>Safe & convinient</h3>
-            <p>With increasing social distancing measures,public transport poses great risks.</p>
-
-        </div>
-
-        <div>
-            <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/maintainence-d19ba04b2340287ab6ce1327a4d8cbd98ca0b2c8e053c795f600b9dfc39fd763.jpg">
-            <h3>Zero maintenance </h3>
-            <p>No hassels of paperwork,regular maintanance at no extra cost &24/7 roadside.</p>
-        </div>
-
-        </div>
-        
-        
 </body>
 </html>
 <script>
@@ -99,4 +338,95 @@
         window.location.href = "# ";
 
     }
+
+        
+    document.getElementById("location").innerText = localStorage.getItem("cityName")
+    
+    // modal data 
+    const cityData = []
+
+    function City(name, image) {
+        this.name = name,
+            this.image = image
+    }
+
+    cityData.push(new City("Agra", "https://i.ibb.co/xg4L7H4/1.png"));
+    cityData.push(new City("Ahemdabad", "https://i.ibb.co/74ZNFPQ/2.png"));
+    cityData.push(new City("Alleppey", "https://i.ibb.co/4TGDmBK/3.png"));
+    cityData.push(new City("Amritsar", "https://i.ibb.co/CMkjRsb/4.png"));
+    cityData.push(new City("Andman", "https://i.ibb.co/fvWd9Gr/5.png"));
+    cityData.push(new City("Banglore", "https://i.ibb.co/SdQ8P54/6.png"));
+    cityData.push(new City("Banglore Airport", "https://i.ibb.co/zQb5GCn/7.png"));
+    cityData.push(new City("Bangkok", "https://i.ibb.co/2g4tst1/8.png"));
+    cityData.push(new City("Belagavi", "https://i.ibb.co/TBYTMDL/9.png"));
+    cityData.push(new City("Bhubaneshwar", "https://i.ibb.co/qMbSv9M/10.png"));
+    cityData.push(new City("Bhuj", "https://i.ibb.co/4gnZ8MV/11.png"));
+    cityData.push(new City("Calicut", "https://i.ibb.co/mJG8Wsc/12.png"));
+    cityData.push(new City("Mount Abu", "https://i.ibb.co/KztsSm6/13.png"));
+    cityData.push(new City("Mumbai", "https://i.ibb.co/vHd7CHZ/14.png"));
+    cityData.push(new City("Mysore", "https://i.ibb.co/KWSzDvz/15.png"));
+    cityData.push(new City("Gandhinagar", "https://i.ibb.co/NFVwjPH/16.png"));
+    cityData.push(new City("Goa", "https://i.ibb.co/Hn7Z25J/17.png"));
+    cityData.push(new City("Grugram", "https://i.ibb.co/pn1jmCv/18.png"));
+    cityData.push(new City("Jaipur", "https://i.ibb.co/Bf8M3Hd/19.png"));
+    cityData.push(new City("Indore", "https://i.ibb.co/fdtnV7n/20.png"));
+    cityData.push(new City("Vizag", "https://i.ibb.co/VNk0rK7/21.png"));
+    cityData.push(new City("Vijayawada", "https://i.ibb.co/YbKd7Xr/22.png"));
+    cityData.push(new City("Udupi", "https://i.ibb.co/LCm9zc6/23.png"));
+    cityData.push(new City("Surat", "https://i.ibb.co/LNPR2CS/24.png"));
+
+    console.log(cityData);
+
+    cityData.forEach(function (ele) {
+        let cityDiv = document.createElement("div");
+        cityDiv.id = "cityDiv";
+
+        let modal = document.getElementById("myModal");
+
+        let cityImage = document.createElement("img");
+        cityImage.src = ele.image;
+
+        cityDiv.append(cityImage);
+
+        cityDiv.addEventListener("click", function () {
+            localStorage.setItem("cityName", ele.name);
+            modal.style.display = "none";
+            document.getElementById("location").innerText = localStorage.getItem("cityName");
+        })
+
+        document.getElementById("modelCity").append(cityDiv)
+    })
+
+    // Get the modal
+    let modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    let btn = document.getElementById("navLocation");
+
+    // Get the <span> element that closes the modal
+    let span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+
+
+    document.querySelector("#button").addEventListener("click",function(){
+    window.location.href = "./booking.html"
+
+    })
 </script>
