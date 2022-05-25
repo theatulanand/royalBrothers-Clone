@@ -38,7 +38,7 @@
 
     cityData.forEach(function (ele) {
         let cityDiv = document.createElement("div");
-        cityDiv.id = cityDiv;
+        cityDiv.id = "cityDiv";
 
         let modal = document.getElementById("myModal");
 
