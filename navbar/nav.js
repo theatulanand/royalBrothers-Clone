@@ -81,3 +81,23 @@
             modal.style.display = "none";
         }
     }
+
+    if(localStorage.getItem("login") == "true"){
+        changeNav();
+    }
+    
+    function changeNav(){
+        let box = document.getElementById("navLoginSignup");
+    
+        document.getElementById("signup").style.display = "none";
+        document.getElementById("login").style.display = "none";
+    
+        let img = document.createElement("img");
+    
+        img.src = "https://d36g7qg6pk2cm7.cloudfront.net/assets/profile-f17aa1dfbd0cb562142f1dcb10bb7ad33e1ac8417ad29a1cdab7dfbfbbfe2f15.png"
+    
+        img.style.width = "40px";
+        img.style.margin = "auto"
+    
+        box.append(img);
+    }
