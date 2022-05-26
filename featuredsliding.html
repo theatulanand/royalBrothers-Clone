@@ -4,54 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Featured Slider</title>
-    <link rel="stylesheet" href="./featuredsliding.css">
+    <title>features</title>
+    <link rel="stylesheet" href="featuredsliding.css">
 </head>
 <body>
     <h1 style="text-align: center;margin-bottom: -10px;">FEATURED IN</h1>
-    <hr id="homepagehr"/>
+          <hr id="featurehr"/><br>
+          <div id="imagefeature">
+              <img src="./img/betterindia.jpg" alt="">
+              <img src="./img/thehindu.jpg" alt="">
+              <!-- <img src="./img/economictime.jpg" alt=""> -->
+              <img src="./img/timeofindia.jpg" alt="">
+              <img src="./img/inc42.jpg" alt="">
+              <img src="./img/moneycontrol.jpg" alt="">
+              
 
-    <div id="slidercontainer"></div>
+          </div>
     
 </body>
 </html>
-<script>
-    const sliderImages = [
-   
-   "img/betterindia.jpg",
-   "img/economictime.jpg",
-   "img/inc42.jpg",
-   "img/moneycontrol.jpg",
-   "img/thehindu.jpg",
-   "img/timeofindia.jpg",
-
-]
-
-const sliderContainerr = document.querySelector("#sliderContainerr");
-
-function slidestart(){
-  var count = 0;
-setInterval(function(){
-   sliderContainerr.innerHTML = null;
-  
-  if(count===sliderImages.length){
-      count=0;
-  }
-  const sliderBox = document.createElement("div");
-  sliderBox.setAttribute("id","sliderDiv");
-  
-  const sliderimg = document.createElement("img");
-  sliderimg.src = sliderImages[count];
-
-  sliderimg.setAttribute("id","sliderimg");
-
-  sliderBox.append(sliderimg);
-
-  sliderContainerr.append(sliderBox);
-  count++;
-
-},1500)
- 
-}
-slidestart();
-</script>

@@ -1,10 +1,13 @@
-#homepagehr{
+#featurehr{
     color: white;
     height: 2px;
     width: 90px;
     background-color:  #fed250;
     }
-    #sliderimg{
-        width: 60%;
-        height: 40%;
+    #imagefeature {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        gap: 80px;
+        justify-content: center;
     }
