@@ -208,7 +208,7 @@ function verifyData(data){
             alert("Login Success");
             isLogin = true;
 
-            changeNav();
+            changeNav(1);
         }
     });
 
@@ -219,21 +219,33 @@ function verifyData(data){
 }
 
 if(localStorage.getItem("login") == "true"){
-    changeNav();
+    changeNav(0);
 }
 
-function changeNav(){
+function changeNav(i){
+    if(i == 1){
+        window.location.reload();
+    }
     let box = document.getElementById("navLoginSignup");
     box.append("");
     document.getElementById("signup").style.display = "none";
     document.getElementById("login").style.display = "none";
 
+    
     let img = document.createElement("img");
-
+    
     img.src = "https://d36g7qg6pk2cm7.cloudfront.net/assets/profile-f17aa1dfbd0cb562142f1dcb10bb7ad33e1ac8417ad29a1cdab7dfbfbbfe2f15.png"
 
-    img.style.width = "40px";
-    img.style.margin = "auto"
+    let name = document.createElement("p");
 
-    box.append(img);
+    name.innerHTML = "   " +  JSON.parse(localStorage.getItem("loginData")).name;
+
+    name.style.color = "black"
+
+    img.style.width = "45px";
+    img.style.margin = "auto";
+
+    box.style.marginRight = "15px"
+
+    box.append(img,name);
 }

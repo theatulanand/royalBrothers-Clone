@@ -20,6 +20,13 @@
       "mobile": "r32t2",
       "password": "232tr",
       "id": 3
+    },
+    {
+      "name": "vipul kumar",
+      "email": "vipul@123",
+      "mobile": "7461009437",
+      "password": "Vupul@123",
+      "id": 4
     }
   ]
 }
