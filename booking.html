@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscription</title>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="subscription.css">
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="payment.css">
 </head>
 <body>
-
     <div id="navbarContainer">
         <div id="navLogoDiv">
             <img src="https://i.ibb.co/WK768hX/download.png" alt="logo" id="navLogo">
@@ -66,96 +65,36 @@
 
                 </div>
             </div>
+
         </div>
+    </div>
+    
+    <p style="margin-top: 100px;text-align:center;margin-bottom: -2px;font-size: 20px;">*All prices are exclusive of taxes</p>
+    <div id="booking-form">
+        <div id="bookingInside-container">
+            <form action="">
+                <h2 style="margin-bottom: -1px;">PICK UP</h2>
+                <input type="text" placeholder="Date" min="2022-05-30" max="2023-05-30"onfocus="{this.type='date'}">
+                <input type="text" placeholder="Time" onfocus="{this.type='time'}">
+                <input type="button" value="SEARCH" id = "button" onclick="searchBike()">
+              </form>
+            </div>
     </div>
 
 
-    <!-- calender part -->
+    <div id="popularity">
+        <p>Sort By</p>
+        <p onclick="redirectPage()">Popularity</p>
+        <p>Price-highToLow</p>
+        <p>Price-lowToHigh</p>
 
-    <div id="main" style="padding-top: 75px;">
-        <div id="subscription-container">
-            <div id="inside-container">
-                <form action="">
-                    <h2>DELIVERY DATE</h2>
-                    <input placeholder="Date" onfocus="(this.type = 'date')">
-                    <input placeholder="Time" onfocus="(this.type = 'time')">
-                    <input type="button" value="Search" id = "button" onclick="searchForBike()">
-                  </form>
-                </div>
-        </div>
-    
-        <!-- below calender part -->
-    
-        <div id="howit-works">
-            <h2>HOW IT WORKS</h2>
-            <hr>
-            <div id="howit-works-inside">
-    
-            <div>
-                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_scooter-340840f2aa3263cef93a01a80ae023a2022c50e9b0294492bc991348859c82ec.png">
-                <p>Select your ride</p>
-            </div>
-    
-            <div>
-                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_deposit-a2db02190834c271e9cbe48e0f26e22e6099769c9ade8886ba6fb4e44a6ffc98.png">
-                <p>Pay deposit & booking
-                    amount for first month</p>
-            </div>
-    
-            <div>
-                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_kyc-8422dfb7da6bac4e7bbc8ef8908c3a8063fb02a4c5a7a95aad15a9b11a4f1150.png">
-                <p>Get KYC approved online
-                    & start riding</p>
-            </div>
-    
-            <div>
-                <img  src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_rent-ba691edeb88c3c0f8ffb1b70148122e48b37d148f421511383c07e2387cf5a5e.png">
-    
-                <p>Pay for upcoming
-                    months at the start
-                    of every month</p>
-            </div>
-    
-            <div>
-                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/hiw_exchange-ddece91b095998b3b4783edb0f53c65431350248da8ee437b58843e647e961fa.png">
-                <p>Our team will service the
-                vehicle periodically at no cost</p>
-            </div>
-    
-            </div>
-    
-        </div>
-    
-    <!-- why rent for -->
-    
-            <h2 style="text-align:center">Why rent fromus?</h2>
-    
-            <div id="whyrent">
-            <div>
-                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/freedom-4181bdd49f6b25fbfc20c87362163cfb6ec16bc822079e14382f8f0aeb5e7470.jpg">
-                <h3>True travel freedom</h3>
-                <p style="width: 350px;">Our quality vechicles,reliable service & unbeatable choice.</p>
-    
-            </div>
-    
-            <div>
-                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/convinient-f602dcca9636d57d0f4429e1dff654408400248819e10ba338a98058785f4b4d.jpg">
-                <h3>Safe & convinient</h3>
-                <p>With increasing social distancing measures,public transport poses great risks.</p>
-    
-            </div>
-    
-            <div>
-                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/maintainence-d19ba04b2340287ab6ce1327a4d8cbd98ca0b2c8e053c795f600b9dfc39fd763.jpg">
-                <h3>Zero maintenance </h3>
-                <p>No hassels of paperwork,regular maintanance at no extra cost &24/7 roadside.</p>
-            </div>
-    
-            </div>
     </div>
+    <hr style="margin-left: 230px;margin-right:230px ;">
+    <div id="Booking-container"></div>
 
-    <!-- footer start -->
-    <div id="footer" style="margin-top: 20px;">
+    <!-- footerPart -->
+
+    <div id="footer">
         <div id="footerfirst-part">
             <div >
                 <h3 style = "font-size: 17px">ROYAL BROTHERS</h3>
@@ -213,10 +152,10 @@
                 </div>
             </div>
 
-            <div style=" margin-left: -40px;">
+            <div style=" margin-left: -90px;">
                 <h3 style = "font-size: 17px">DOWNLOAD OUR APP</h3>
                 <hr>
-                <div id="footerdownload-app" style="">
+                <div id="footerdownload-app" style="display:flex">
                     <img style="margin-right: 50px;"
                         src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/app_store-4407bc8ced0d52a50ff042ce51e32d51de3e11717955798ec54c6a28e7926c7c.png">
                     <img
@@ -230,8 +169,53 @@
 
 
         <div id="footersecond-part">
-            
-            <div id="secondpart-second" style="padding-top: 20px;">
+
+            <div id="secondpart-one">
+                <h1>Bike rentals in Alleppey</h1>
+                <p>Welcome to Alleppey, one of the most alluring cities in India and a popular holiday destination among
+                    people all over the globe. This tiny city in Kerala houses a huge nexus of waterways and gorgeous
+                    backwaters. It also has amazing roads, so the most fun way of traveling in the city is via bike
+                    rental in Alleppey.</p>
+            </div>
+
+            <div id="secondpart-one">
+                <h1>Ride through paradise with bike rent in Alleppey</h1>
+                <p>If you’re planning on visiting a laidback city with a beach, don’t think twice about going to
+                    Alleppey. Officially known as Alapuzzha, this city is Kerala’s most popular tourist spot. If you are
+                    someone who loves water bodies, then Alleppey will steal your heart. It has picturesque lagoons,
+                    canals, backwaters, and beaches. These attractions make Alleppey a popular honeymoon destination as
+                    well.</p>
+                <p>Taking a two-wheeler on rent in Alleppey will help you get around the city with absolute ease. It is
+                    small and has well-built roads, so traveling on a bike on rent in Alleppey is relatively
+                    comfortable. While there are several agencies offering bike rentals in Alleppey, Royal Brothers
+                    should be your number one choice because we offer the biggest range of two-wheelers at the best
+                    prices on the market.</p>
+                <p>This greenery-fringed city is known for its lustrous landscape and backwaters. Alleppey is famous for
+                    its houseboats, earning the well-deserved nickname - the Venice of the East. This city will bring
+                    out the romantic in you with its pristine beaches and calm lagoons. You could enjoy a lovely ride
+                    around the city with bikes for rent in Alleppey. When in Alleppey, one must not miss a tour on its
+                    famous houseboats. Explore the waters and taste some of the most extraordinary freshwater fish and
+                    seafood dishes right on the boat. Soak in the sun and bask in the green glory of the Alleppey, a
+                    truly magical paradise.</p>
+            </div>
+
+            <div id="secondpart-one">
+                <h1>One-stop shop for bike rentals in Alleppey</h1>
+                <p>Alleppey is a small but incredibly clean city. It is a pleasure to ride around on the streets of this
+                    city. Thanks to bike rental in Alleppey, it is extremely easy to get about. Explore the city’s
+                    colorful markets for amazing local handloom and trinkets. It would be a shame if you missed out on
+                    Alleppey’s famous cuisine. With your own bike rent in Alleppey, you can stop wherever you would
+                    like, something you cannot enjoy while traveling in a bus.</p>
+                <p>Royal Brothers specializes in bike rental in Alleppey and 40 other cities across India. We have the
+                    biggest inventory of two-wheelers available for rent. We ensure that all our vehicles are regularly
+                    washed and serviced so our customers face no problems during their travels.</p>
+                <p>If you’re looking for bikes for rent in Alleppey, visit the Royal Brothers website and pick the
+                    two-wheeler of your choosing. We have motorcycles by Royal Enfield, Honda and Yamaha. Our booking
+                    process is completely transparent and our deliveries are always on time. For more details on bike
+                    rentals in Alleppey and other services, get in touch with our executives today.</p>
+            </div>
+
+            <div id="secondpart-second">
                 <div>
                     <h1 id = "ourPresence">OUR PRESENCE</h1>
                     <hr>
@@ -326,21 +310,82 @@
             </div>
         </div>
 
-        <h3 id="secondpart-h3">Made with <img style="margin-bottom: -8px; font-size: 20px;"
+        <h3 id="secondpart-h3">Made with <img style="margin-bottom: -8px;"
                 src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/like-b8b570f724101252e5c39d8bd66246607fb226e93e3ba17b0516209b20832345.png">
             by team Royal Brothers</h3>
+
     </div>
+
+   
 </body>
 </html>
 <script>
+    const booking_container = document.querySelector("#Booking-container")
+ const getData = async()=>{
 
-    searchForBike = () =>{
-        window.location.href = "# ";
+    const url = ` http://localhost:3000/scooties`;
+    const res = await fetch(url);
+    const data = await res.json();
+    console.log(data);
+    disPalyData(data);
+ }
+ getData();
 
-    }
+const disPalyData = (data)=>{
+data.forEach(element => {
 
-        
-    document.getElementById("location").innerText = localStorage.getItem("cityName")
+    const bookCon = document.createElement("div");
+
+    const title = document.createElement("h4");
+    title.innerText = element.title;
+    title.style.textAlign = "center";
+    title.style.fontSize = "20px";
+    title.style.marginBottom = "-1px";
+
+    const image = document.createElement("img");
+    image.src = element.url;
+
+    const month = document.createElement("p");
+    month.innerText = element.month[0]+"/Month";
+    month.style.textAlign = "center";
+    month.style.fontSize = "25px"
+
+
+    const hr = document.createElement("hr");
+    hr.style.backgroundColor = "gray";
+
+    const booknow_button = document.createElement("button");
+    booknow_button.innerText = "BOOK NOW";
+    
+    booknow_button.addEventListener("click",function(){
+        paymentPage(element.id,element.month);
+
+    })
+
+    bookCon.append(title,image,hr,month,booknow_button);
+
+    booking_container.append(bookCon);
+
+});
+}
+
+const paymentPage = (id,month)=>{
+    localStorage.setItem("idAndMonth",JSON.stringify(id));
+    window.location.href = "paymentPage.html"
+
+}
+
+
+const redirectPage = ()=>{
+    window.location.href = "booking.html";
+}
+
+const searchBike = ()=>
+{
+    window.location.href = "booking.html";
+}
+
+document.getElementById("location").innerText = localStorage.getItem("cityName")
     
     // modal data 
     const cityData = []
@@ -375,7 +420,7 @@
     cityData.push(new City("Udupi", "https://i.ibb.co/LCm9zc6/23.png"));
     cityData.push(new City("Surat", "https://i.ibb.co/LNPR2CS/24.png"));
 
-    console.log(cityData);
+    // console.log(cityData);
 
     cityData.forEach(function (ele) {
         let cityDiv = document.createElement("div");
@@ -422,10 +467,4 @@
             modal.style.display = "none";
         }
     }
-
-
-
-    document.querySelector("#button").addEventListener("click",function(){
-    window.location.href = "./booking.html"
-    })
 </script>

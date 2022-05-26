@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider</title>
-    <link rel="stylesheet" href="./homePageSlider.css">
-</head>
-<body>
-    <h1 style="text-align: center;margin-bottom: -10px;">WE BELIEVE IN QUALITY</h1>
-    <hr id="homepagehr"/>
-
-    <div id="sliderContainer"></div>
-</body>
-</html>
-<script>
-
-    const sliderImages = [
+const sliderImages = [
     "https://github.com/theatulanand/royalBrothers-Clone/blob/chinni/images/cities.png?raw=true",
     "https://github.com/theatulanand/royalBrothers-Clone/blob/chinni/images/rating.png?raw=true",
     "https://github.com/theatulanand/royalBrothers-Clone/blob/chinni/images/bike.png?raw=true",
@@ -52,5 +34,3 @@ function slidestart(){
    
 }
 slidestart();
-
-</script>
