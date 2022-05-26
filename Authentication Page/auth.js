@@ -213,7 +213,11 @@ function verifyData(data){
     });
 
     if(isLogin == false){
-        alert("User Not Found");
+        document.getElementById("invalidPass").style.display = "block"
+
+        setTimeout(() => {
+            document.getElementById("invalidPass").style.display = "none"
+        }, 2000);
     }
 
 }

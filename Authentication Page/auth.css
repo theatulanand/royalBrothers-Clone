@@ -227,6 +227,19 @@ body {
   box-sizing: border-box;
 }
 
+#invalidPass{
+  position: fixed; 
+  margin-top: -450px;
+  margin-left: 70%; 
+  background-color: red;
+  padding: 10px;
+  color: white;
+  height: 40px;
+  padding-top: 0px;
+  border-radius: 5px;
+  display: none;
+}
+
 .wrapper{
   overflow: hidden;
   max-width: 390px;
