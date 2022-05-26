@@ -146,7 +146,11 @@ async function addData() {
 
         userData.forEach(function(ele){
             if(ele.email == email){
-                alert("User Already Exist");
+                document.getElementById("invalidPass").style.display = "block";
+                document.getElementById("alertTxt").innerText = "User already exist !!"
+                setTimeout(() => {
+                    document.getElementById("invalidPass").style.display = "none";
+                },2000);
                 isExist = true;
             }
         })
@@ -169,8 +173,6 @@ async function addData() {
                 'Content-Type': "application/json"
             }
         });
-
-        alert("Signup Success")
 
     console.log(data);
 
@@ -213,7 +215,8 @@ function verifyData(data){
     });
 
     if(isLogin == false){
-        document.getElementById("invalidPass").style.display = "block"
+        document.getElementById("invalidPass").style.display = "block";
+        document.getElementById("alertTxt").innerText = "Invalid email / password combination";
 
         setTimeout(() => {
             document.getElementById("invalidPass").style.display = "none"
