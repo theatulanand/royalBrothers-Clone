@@ -16,10 +16,11 @@
 #main{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    column-gap: 50px;
+    column-gap: 45px;
     row-gap: 25px;
-    margin: 10px 50px;
+    margin: 10px 150px;
     padding: 10px;  
+    position: relative;
 }
 
 
@@ -28,11 +29,12 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid rgb(226, 213, 213);
-    align-items: stretch;
+    border: 1px solid rgb(242, 239, 239);
     padding-top: 10px;
     border-radius: 10px;
+    gap: 10px;
 }
+
 
 h1{
     font-size: 2.5rem;
@@ -40,34 +42,46 @@ h1{
 
 #main div img{
     width: 250px;
+    align-self: center;
 }
 
 .days_div{
     margin-top: 10px;
-    border: 1px solid black;
     flex: auto;
-    padding: 15px;
-    border-radius: 0px;
+    text-align: center;
+    padding: 2px;
+    box-shadow: 0rem 0rem 0.2667rem 0rem rgb(190, 190, 187);
 }
 
 .days_div_element{
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    gap: 20px;
+    gap: 2px;
     width: 100%;
     list-style-type: none;
-    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-evenly;
 }
 
 ul li:hover{
     cursor: pointer;
 }
 
+ul li{
+    padding: 10px;
+}
+
 .active{
-    border-bottom: yellow 5px solid;
-    background-color: pink;
+    border-bottom:0.2rem #fad946 solid;
+    background-color: rgba(238,110,115,0.7);
     cursor: pointer;
+}
+
+ul li:first-child{
+    border-bottom: 0.2rem #fdd835 solid;
 }
 
 button{
@@ -80,3 +94,91 @@ button{
     outline: none;
     border: none;
 }
+
+
+td{
+    padding: 0 25px;
+    font-size: 12px;
+}
+
+h5{
+    font-size: 0.8rem;
+}
+
+li{
+    font-size: 0.8rem;
+}
+
+h4{
+    font-size: 0.9rem;
+}
+
+#form_wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 0.377);
+    z-index: 100;
+    display: grid;
+    place-items: center;
+    justify-content: space-around;
+}
+
+#booking_form{
+    width: 400px;
+    height: 340px; 
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-shadow: 0rem 0rem 0.2667rem 0rem rgb(249, 249, 249);
+    text-align: left;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    /* opacity: 1; */
+    /* z-index: 1003;
+    position: fixed;
+    top: 150px;
+    left: 550px; */
+    top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+#booking_form input{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(228, 224, 224);
+    margin-bottom: 25px;
+}
+
+#calender{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#time{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#booking_form div{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+#time { 
+    padding: 15px; 
+}
+
+#submit{
+    background-color: #fed250;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
