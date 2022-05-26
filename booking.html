@@ -6,69 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
     <link rel="stylesheet" href="booking.css">
-    <link rel="stylesheet" href="payment.css">
 </head>
 <body>
-    <div id="navbarContainer">
-        <div id="navLogoDiv">
-            <img src="https://i.ibb.co/WK768hX/download.png" alt="logo" id="navLogo">
-        </div>
-        <div id="navOptions">
-            <div>
-                <img style="width: 54px;"
-                    src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/RBX_logo-7618eb109a17dcfa44e88596c831606746fc124a000553458d6b7fc1bf9a6345.png"
-                    alt="">
-            </div>
-            <div>Tarrif</div>
-            <div style="display: flex;">What's new &nbsp;
-                <i class="fa fa-angle-down"> </i>
-            </div>
-            <div>Careers</div>
-            <div>Offers</div>
-            <div style="display: flex;">Partner with us &nbsp;
-                <i class="fa fa-angle-down"> </i>
-            </div>
-        </div>
-        <div id="navRight">
-            <div id="navLoginSignup">
-                <div id="login">Login</div>
-                <div id="signup">Signup</div>
-            </div>
-            <div id="navLocation" style="cursor: pointer;">
-                <img src="https://i.ibb.co/N160zRK/location.png" alt="">
-                <button>
-                    <p id="location">Banglore</p>
-                </button>
-                <i class="fa fa-angle-down"></i>
-            </div>
-        </div>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div id="modelTop">
-                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/logo-b03af389c15608bf4fa52378f448a48a9c8f92f70242cc88340e971e7599d6ae.png"
-                        alt="">
-                    <p style="font-weight: 300;"> | &nbsp; Rental Bike</p>
-                </div>
-                <div id="modelSearch">
-                    <div id="searchicon">
-                        <img src="https://i.ibb.co/4MPMFh4/search.png" alt="">
-                    </div>
-                    <div>
-                        <input type="text" placeholder="Search or type city to select">
-                    </div>
-                </div>
-                <div id="modelCity">
-
-                </div>
-            </div>
-
-        </div>
-    </div>
     
+    <!-- booking page -->
     <p style="margin-top: 100px;text-align:center;margin-bottom: -2px;font-size: 20px;">*All prices are exclusive of taxes</p>
     <div id="booking-form">
         <div id="bookingInside-container">
@@ -385,86 +326,4 @@ const searchBike = ()=>
     window.location.href = "booking.html";
 }
 
-document.getElementById("location").innerText = localStorage.getItem("cityName")
-    
-    // modal data 
-    const cityData = []
-
-    function City(name, image) {
-        this.name = name,
-            this.image = image
-    }
-
-    cityData.push(new City("Agra", "https://i.ibb.co/xg4L7H4/1.png"));
-    cityData.push(new City("Ahemdabad", "https://i.ibb.co/74ZNFPQ/2.png"));
-    cityData.push(new City("Alleppey", "https://i.ibb.co/4TGDmBK/3.png"));
-    cityData.push(new City("Amritsar", "https://i.ibb.co/CMkjRsb/4.png"));
-    cityData.push(new City("Andman", "https://i.ibb.co/fvWd9Gr/5.png"));
-    cityData.push(new City("Banglore", "https://i.ibb.co/SdQ8P54/6.png"));
-    cityData.push(new City("Banglore Airport", "https://i.ibb.co/zQb5GCn/7.png"));
-    cityData.push(new City("Bangkok", "https://i.ibb.co/2g4tst1/8.png"));
-    cityData.push(new City("Belagavi", "https://i.ibb.co/TBYTMDL/9.png"));
-    cityData.push(new City("Bhubaneshwar", "https://i.ibb.co/qMbSv9M/10.png"));
-    cityData.push(new City("Bhuj", "https://i.ibb.co/4gnZ8MV/11.png"));
-    cityData.push(new City("Calicut", "https://i.ibb.co/mJG8Wsc/12.png"));
-    cityData.push(new City("Mount Abu", "https://i.ibb.co/KztsSm6/13.png"));
-    cityData.push(new City("Mumbai", "https://i.ibb.co/vHd7CHZ/14.png"));
-    cityData.push(new City("Mysore", "https://i.ibb.co/KWSzDvz/15.png"));
-    cityData.push(new City("Gandhinagar", "https://i.ibb.co/NFVwjPH/16.png"));
-    cityData.push(new City("Goa", "https://i.ibb.co/Hn7Z25J/17.png"));
-    cityData.push(new City("Grugram", "https://i.ibb.co/pn1jmCv/18.png"));
-    cityData.push(new City("Jaipur", "https://i.ibb.co/Bf8M3Hd/19.png"));
-    cityData.push(new City("Indore", "https://i.ibb.co/fdtnV7n/20.png"));
-    cityData.push(new City("Vizag", "https://i.ibb.co/VNk0rK7/21.png"));
-    cityData.push(new City("Vijayawada", "https://i.ibb.co/YbKd7Xr/22.png"));
-    cityData.push(new City("Udupi", "https://i.ibb.co/LCm9zc6/23.png"));
-    cityData.push(new City("Surat", "https://i.ibb.co/LNPR2CS/24.png"));
-
-    // console.log(cityData);
-
-    cityData.forEach(function (ele) {
-        let cityDiv = document.createElement("div");
-        cityDiv.id = "cityDiv";
-
-        let modal = document.getElementById("myModal");
-
-        let cityImage = document.createElement("img");
-        cityImage.src = ele.image;
-
-        cityDiv.append(cityImage);
-
-        cityDiv.addEventListener("click", function () {
-            localStorage.setItem("cityName", ele.name);
-            modal.style.display = "none";
-            document.getElementById("location").innerText = localStorage.getItem("cityName");
-        })
-
-        document.getElementById("modelCity").append(cityDiv)
-    })
-
-    // Get the modal
-    let modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    let btn = document.getElementById("navLocation");
-
-    // Get the <span> element that closes the modal
-    let span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
 </script>
