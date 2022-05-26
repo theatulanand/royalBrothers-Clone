@@ -1,0 +1,153 @@
+/* #footer *{
+    border: 1px solid red ;
+} */
+
+#footer{
+    background-color: rgb(49, 48, 48);
+    font-family: "Muli", sans-serif;
+    margin-top: 80px;
+}
+
+.footerfirst-part{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 2.5rem 7.5rem;
+    place-items: left;
+
+}
+
+.download-app{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contact_details{
+    color: #ddd;
+    display: flex;
+    text-decoration: none;
+    gap: 20px;
+    font-size: 0.8rem;
+}
+
+.royal_brothers_contact a{
+    padding-bottom: 20px;
+}
+
+.footerfirst-part h3::after{
+    content: "";
+    display: block;
+    height: 0.1563em;
+    background-color: #fed250;
+    width: 3.5em;
+    margin-top: 0.5em;
+}
+
+.footerfirst-part h3{
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.footerfirst-part ul li{
+    color: #ddd;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+#footer-logo{
+    display: flex;
+    place-items: flex-start;
+}
+
+#footer-logo img{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+#footersecond-part{
+    background-color: rgb(69, 68, 67);
+}
+
+#secondpart-one{
+    width: 85%;
+    margin: auto;
+    
+}
+#secondpart-one h1{
+    color: rgb(249, 240, 240);
+    padding-top: 50px;
+
+}
+#secondpart-one p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+}
+#secondpart-second{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+
+#secondpart-second div h3{
+    margin: 2rem;
+    text-align: center;
+    color: rgb(249, 240, 240);
+}
+#secondpart-second div h3::after{
+    content: "";
+    display: block;
+    height: 0.1563em;
+    background-color: #fed250;
+    width: 3.5em;
+    margin-top: 0.5em;
+    place-items: center;
+    margin: auto;
+}
+
+
+#secondpart-second div p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+#secondpart-h3{
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: -45px;
+    font-size: 1.0rem;
+    font-weight: 400;
+}
+
+#secondpart-h3 img{
+    width: 20px;
+}
+
+#footersecond-part #secondpart-second p{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-second .footer-bold{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-one p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+#footersecond-part #secondpart-one h1{
+    font-size: 20px;
+}
+
+#secondpart-second #ourPresence{
+    font-size: 22px;
+}

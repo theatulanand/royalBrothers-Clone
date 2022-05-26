@@ -4,6 +4,11 @@ export const navbar = () => {
     <img src="https://i.ibb.co/WK768hX/download.png" alt="logo" id = "navLogo">
 </div>
 <div id="navOptions">
+<div>
+<img style="width: 54px;"
+    src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/RBX_logo-7618eb109a17dcfa44e88596c831606746fc124a000553458d6b7fc1bf9a6345.png"
+    alt="">
+</div>
         <div> <a href="tariff.html">Tarrif</a> </div>
         <div style="display: flex;">What's new &nbsp;
             <i class="fa fa-angle-down"> </i>
