@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbarContainer">
+        <div id="navLogoDiv">
+            <img src="https://i.ibb.co/WK768hX/download.png" alt="logo" id="navLogo">
+        </div>
+        <div id="navOptions">
+            <div>
+                <img style="width: 54px;"
+                    src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/RBX_logo-7618eb109a17dcfa44e88596c831606746fc124a000553458d6b7fc1bf9a6345.png"
+                    alt="">
+            </div>
+            <div>Tarrif</div>
+            <div style="display: flex;">What's new &nbsp;
+                <i class="fa fa-angle-down"> </i>
+            </div>
+            <div>Careers</div>
+            <div>Offers</div>
+            <div style="display: flex;">Partner with us &nbsp;
+                <i class="fa fa-angle-down"> </i>
+            </div>
+        </div>
+        <div id="navRight">
+            <div id="navLoginSignup">
+                <div id="login">Login</div>
+                <div id="signup">Signup</div>
+            </div>
+            <div id="navLocation" style="cursor: pointer;">
+                <img src="https://i.ibb.co/N160zRK/location.png" alt="">
+                <button>
+                    <p id="location">Banglore</p>
+                </button>
+                <i class="fa fa-angle-down"></i>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modelTop">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/logo-b03af389c15608bf4fa52378f448a48a9c8f92f70242cc88340e971e7599d6ae.png"
+                        alt="">
+                    <p style="font-weight: 300;"> | &nbsp; Rental Bike</p>
+                </div>
+                <div id="modelSearch">
+                    <div id="searchicon">
+                        <img src="https://i.ibb.co/4MPMFh4/search.png" alt="">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Search or type city to select">
+                    </div>
+                </div>
+                <div id="modelCity">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <!-- Header Section Start -->
+        <div id="headerContainer">
+            <div id="header">
+                <form action="">
+                    <h2>Search your next ride</h2>
+                    <label>Pickup</label><br>
+                    <input placeholder="Date" onfocus="(this.type='date')">
+                    <input placeholder="Time" onfocus="(this.type='time')"><br>
+                    <label>Dropoff</label><br>
+                    <input placeholder="Date" onfocus="(this.type='date')">
+                    <input placeholder="Time" onfocus="(this.type='time')"><br>
+                    <input type="button" value="Search" id="headerButton">
+                </form>
+            </div>
+        </div>
+</body>
+<script src="./index.js"></script>
+</html>

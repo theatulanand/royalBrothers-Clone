@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jane Ausello",
+      "email": "jausello0@theatlantic.com",
+      "mobile": "9117903125",
+      "password": "12345"
+    },
+    {
+      "name": "Atul Kumar",
+      "email": "thisisatulanand@gmail.com",
+      "mobile": "9117903125",
+      "password": "Atul@9117",
+      "id": 2
+    },
+    {
+      "name": "Atul Kumar",
+      "email": "vipul@gmail.com",
+      "mobile": "r32t2",
+      "password": "232tr",
+      "id": 3
+    },
+    {
+      "name": "vipul kumar",
+      "email": "vipul@123",
+      "mobile": "7461009437",
+      "password": "Vupul@123",
+      "id": 4
+    }
+  ]
+}
