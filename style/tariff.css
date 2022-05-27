@@ -11,6 +11,7 @@
     font-size: 2.5rem;
     margin-top: 1rem;
     margin-bottom: 1em;
+    margin-top: 100px;
 }
 
 #main{
@@ -70,7 +71,7 @@ ul li:hover{
     cursor: pointer;
 }
 
-ul li{
+#main ul li{
     padding: 10px;
 }
 
@@ -80,7 +81,7 @@ ul li{
     cursor: pointer;
 }
 
-ul li:first-child{
+#main ul li:first-child{
     border-bottom: 0.2rem #fdd835 solid;
 }
 
@@ -119,15 +120,17 @@ h4{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(32, 32, 32, 0.377);
+    background-color: rgba(32, 32, 32, 0.764);
     z-index: 100;
     display: grid;
     place-items: center;
     justify-content: space-around;
+    
 }
 
 #booking_form{
-    width: 400px;
+    position: absolute;
+    width: 370px;
     height: 340px; 
     display: flex;
     justify-content: flex-start;
@@ -136,14 +139,16 @@ h4{
     text-align: left;
     padding: 20px;
     gap: 10px;
-    border-radius: 10px;
+    border-radius: 7px;
     /* opacity: 1; */
     /* z-index: 1003;
     position: fixed;
     top: 150px;
     left: 550px; */
-    top: 20px;
+    top: 80px;
+    left: 550px;
     background-color: rgb(255, 255, 255);
+
 }
 
 #booking_form input{
@@ -153,12 +158,12 @@ h4{
     margin-bottom: 25px;
 }
 
-#calender{
+.calender{
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
 
-#time{
+.time1{
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -182,3 +187,10 @@ h4{
     margin-bottom: 10px;
 }
 
+.cancel{
+    display: inline-block;
+    width: 30px;
+    right: 30px;
+    position: absolute;
+    cursor: pointer;
+}

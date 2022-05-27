@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Muli", sans-serif;
+}
+
+.yellow_bar{
+    position: fixed;
+    margin-top: 70px;
+    width: 100%;
+    background-color: #fed250;
+    top: 5px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+}
+
+#main{
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    height: 100%;
+}
+
+.sidebar{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.itemsection{
+    width: 100%;
+}
+
+tr td{
+    border-bottom: 1px solid red;
+}
+
+#filter-date h3{
+    font-size: 1.5rem;
+    line-height: 35px;
+    border-bottom: 1px solid rgb(197, 196, 196);
+    margin-bottom: 20px;
+}
+
+h5{
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 0.9rem;
+    margin-right: 50px;
+}
+
+.pickup-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin-bottom: 20px;
+}
+
+.dropoff-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
+
+.pickup-details p{
+    border-bottom: 1px solid rgb(197, 196, 196);
+    margin-right: 20px;
+    line-height: 25px;
+}
+
+.dropoff-details p{
+    border-bottom: 1px solid rgb(197, 196, 196);
+    margin-right: 20px;
+    line-height: 25px;
+}
+
+.itemsection{
+    display: flex;
+    padding: 20px;
+
+}
+
+.itemsection div{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+button{
+    background-color: #fed250;
+    padding: 10px;
+    letter-spacing: .5px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.itemsection img::after{
+    content: "";
+    display: block;
+    height: 0.1563em;
+    background-color: #fed250;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
