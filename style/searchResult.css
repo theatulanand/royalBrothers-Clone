@@ -45,6 +45,11 @@ body {
     padding: 20px;
 }
 
+#navOptions div a{
+    text-decoration: none;
+    color: black;
+}
+
 #navOptions div:hover {
     cursor: pointer;
     background-color: #fed250;

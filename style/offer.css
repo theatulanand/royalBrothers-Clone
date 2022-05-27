@@ -52,6 +52,11 @@ body {
     background-color: #fed250;
 }
 
+#navOptions div a{
+    text-decoration: none;
+    color: black;
+}
+
 #navLoginSignup {
     display: flex;
     /* border: 1px solid red; */
