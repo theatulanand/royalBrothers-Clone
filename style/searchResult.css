@@ -20,7 +20,7 @@
 #main{
     margin-top: 140px;
     display: grid;
-    grid-template-columns: 420px 1fr;
+    grid-template-columns: 390px 1fr;
     height: 100%;
 }
 
@@ -86,13 +86,13 @@ label{
 
 }
 
-.itemsection div{
+.itemsection > div{
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     text-align: center;
     padding: 20px;
     border-radius: 6px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
 }
 
 button{
@@ -115,3 +115,16 @@ button{
     margin-top: 0.5em;
 }
 
+
+.booking_div{
+    border-top: 5px solid rgb(220, 212, 212);
+    border-bottom: 5px solid rgb(227, 221, 221);
+    margin-top: 20px;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.itemsection h4{
+    margin-top: 20px;
+}

@@ -3,6 +3,8 @@ import { footer } from "./Components/footer.js";
 
 let navbar_div = document.getElementById("navbar-container");
 
+let difference, time;
+
 navbar_div.innerHTML = navbar();
 
 let footer_div = document.getElementById("footer");
@@ -47,11 +49,51 @@ const showData = (data1) => {
   let bike_img = document.createElement("img");
   bike_img.src = data1.url;
 
+  let booking_div = document.createElement("div");
+
+  let pickup_time = document.createElement("h5");
+  pickup_time.innerHTML = data.pick_up_time;
+
+  let pickDate = document.createElement("p");
+  pickDate.innerHTML = data.pick_up_date;
+
   let btn = document.createElement("button");
   btn.innerHTML = "BOOK NOW";
+  btn.addEventListener("click", () => {
+      location.href = "summary.html"
+  })
 
-  
+  let dropof_time = document.createElement("h5");
+  dropof_time.innerHTML = data.drop_time;
 
-  div.append(title, bike_img, btn);
+  let dropDate = document.createElement("p");
+  dropDate.innerHTML = data.drop_date;
+
+  let p = new Date(data.pick_up_date);
+  let d = new Date(data.drop_date);
+  difference = Math.abs(d.getTime() - p.getTime()) / 36e5;
+  let price_cal = difference * Number(data1.HOURLY.price);
+
+  time = SplitTime(difference);
+
+  let searchDuration_div = document.querySelector(".sd");
+  searchDuration_div.innerHTML = `<p>${time}</p>`;
+
+  let price = document.createElement("h4");
+  price.innerHTML = "₹ " + price_cal;
+
+  booking_div.append(pickup_time, pickDate, dropof_time, dropDate);
+  booking_div.classList.add("booking_div");
+
+  div.append(title, bike_img, booking_div, price, btn);
+
   item_div.append(div);
 };
+
+// calculcate the days
+function SplitTime(numberOfHours) {
+  var Days = Math.floor(numberOfHours / 24);
+  var Remainder = numberOfHours % 24;
+  var Hours = Math.floor(Remainder);
+  return `Days ${Days} Hours ${Hours}`;
+}
