@@ -3,7 +3,7 @@ import {navbar} from "./Components/navbar.js"
 import {footer} from "./Components/footer.js"
 
 let navbar_div = document.getElementById("navbar-container");
-navbar_div.innerHTML = navbar()
+//navbar_div.innerHTML = navbar()
 
 let url = "http://localhost:3000/bikes"
 
