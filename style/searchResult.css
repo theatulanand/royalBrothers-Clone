@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Muli", sans-serif;
+}
+
+.yellow_bar{
+    position: fixed;
+    margin-top: 70px;
+    width: 100%;
+    background-color: #fed250;
+    top: 5px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+}
+
+#main{
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 390px 1fr;
+    height: 100%;
+}
+
+.sidebar{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.itemsection{
+    width: 100%;
+}
+
+tr td{
+    border-bottom: 1px solid red;
+}
+
+#filter-date h3{
+    font-size: 1.5rem;
+    line-height: 35px;
+    border-bottom: 1px solid rgb(197, 196, 196);
+    margin-bottom: 20px;
+}
+
+h5{
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 0.9rem;
+    margin-right: 50px;
+}
+
+.pickup-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin-bottom: 20px;
+}
+
+.dropoff-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
+
+.pickup-details p{
+    border-bottom: 1px solid rgb(197, 196, 196);
+    margin-right: 20px;
+    line-height: 25px;
+}
+
+.dropoff-details p{
+    border-bottom: 1px solid rgb(197, 196, 196);
+    margin-right: 20px;
+    line-height: 25px;
+}
+
+.itemsection{
+    display: flex;
+    padding: 20px;
+}
+
+.itemsection > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
+button{
+    background-color: #fed250;
+    padding: 10px;
+    letter-spacing: .5px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.itemsection img::after{
+    content: "";
+    display: block;
+    height: 0.1563em;
+    background-color: #fed250;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+
+.booking_div{
+    border-top: 5px solid rgb(220, 212, 212);
+    border-bottom: 5px solid rgb(227, 221, 221);
+    margin-top: 20px;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.itemsection h4{
+    margin-top: 20px;
+}

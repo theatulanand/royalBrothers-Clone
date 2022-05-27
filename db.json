@@ -1,0 +1,355 @@
+{
+    "bikes": [
+        {
+            "id": 1,
+            "title": "Aprilia SR 150 (ABS)",
+            "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/030/medium/Aprilia-SR-150__...png?1504092295",
+            "HOURLY" : {
+                "price":"22",
+                "km": "5.0",
+                "Excess" :"₹ 4.0"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 3014", 
+                "km" : "540", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 4019",
+                "km" : "900 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 5359",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }
+
+        },
+        {
+            "id": 2,
+            "title": "Honda Dio",
+            "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/035/medium/Dio-min_2.png?1519738819",
+            "HOURLY" : {
+                "price":"19",
+                "km": "5.0",
+                "Excess" :"₹ 4.0"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 2412", 
+                "km" : "740", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 3216",
+                "km" : "1200 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 4286",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }
+        },
+        {
+            "id":3,
+            "title": "Honda Activa 4G",
+            "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/121/medium/Activa_48-min_2.png?1592300804",
+            "HOURLY" : {
+                "price":"18",
+                "km": "5.0",
+                "Excess" :"₹ 4.0"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 3014", 
+                "km" : "540", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 4019",
+                "km" : "900 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 5359",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }
+        },
+        {
+            "id":4,
+            "title":"Honda Activa 5G",
+            "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png?1532687566",
+            "HOURLY" : {
+                "price":"19",
+                "km": "5.0",
+                "Excess" :"₹ 4.0"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 3014", 
+                "km" : "540", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 4019",
+                "km" : "900 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 5359",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }
+        },
+        {
+            "id": 5,
+            "title": "TVS Ntorq 125",
+            "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/257/medium/ntorq2.png?1571407789",
+            "HOURLY" : {
+                "price":"22",
+                "km": "5.0",
+                "Excess" :"₹ 4.0"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 3014", 
+                "km" : "540", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 4019",
+                "km" : "900 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 5359",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }
+        },
+        {
+            "id": 6,
+            "title": "Bajaj Pulsar 150",
+            "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/016/medium/Bajaj_Pulsar-min_2.png?1519738545",
+            "HOURLY" : {
+                "price":"21",
+                "km": "5.0",
+                "Excess" :"₹ 4.0"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 3014", 
+                "km" : "540", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 4019",
+                "km" : "900 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 5359",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }
+        },
+        {
+            "id": 7,
+            "title" : "Yamaha FZ",
+            "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/020/medium/FZ_Version_1.png?1504100292",
+            "HOURLY" : {
+                "price":"25",
+                "km": "10.0",
+                "Excess" :"₹ 5.0"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 3014", 
+                "km" : "540", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 4019",
+                "km" : "900 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 5359",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }      
+        },
+        {
+            "id": 8,
+            "title": "Hero Glamour",
+            "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/265/medium/Glamour_125.png?1571327418",
+            "HOURLY" : {
+                "price":"19",
+                "km": "5.0",
+                "Excess" :"₹ 4.0"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 2412", 
+                "km" : "740", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 3216",
+                "km" : "1200 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 4286",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }
+        },
+        {
+            "id": 9,
+            "title": "Royal Enfield Classic 350",
+            "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/007/medium/Classic_350-1-min_2.png?1519738687",
+            "HOURLY" : {
+                "price":"22",
+                "km": "5.0",
+                "Excess" :"₹ 4.0"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 3014", 
+                "km" : "540", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 4019",
+                "km" : "900 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 5359",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }
+        },
+        {
+            "id": 10,
+            "title": "Royal Enfield Himalayan",
+            "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/014/medium/Himalayan_RE-min_2.png?1519739226",
+            "HOURLY" : {
+                "price":"47",
+                "km": "12.0",
+                "Excess" :"₹ 4.0"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 3014", 
+                "km" : "540", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 4019",
+                "km" : "900 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 5359",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }
+        },
+        {
+            "id": 11,
+            "title": "Royal Enfield Classic 350 ( Redditch )",
+            "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/021/medium/Classic-350-redditch.png?1552661989",
+            "HOURLY" : {
+                "price":"50",
+                "km": "12.0",
+                "Excess" :"₹ 5.5"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 2412", 
+                "km" : "740", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 3216",
+                "km" : "1200 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 4286",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }
+        },
+        {
+            "id": 12,
+            "title" : "Royal Enfield Stealth Black",
+            "url" : "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/229/medium/RE-Stealth-black.png?1539246851",
+            "HOURLY" : {
+                "price":"55",
+                "km": "12.0",
+                "Excess" :"₹ 6.0"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 2412", 
+                "km" : "740", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 3216",
+                "km" : "1200 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 4286",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }
+        },
+        {
+            "id": 13,
+            "title": "Royal Enfield Thunderbird 350X",
+            "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/230/medium/thunderbird_x_%281%29.png?1529588914",
+            "HOURLY" : {
+                "price":"50",
+                "km": "12.0",
+                "Excess" :"₹ 6.0"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 2412", 
+                "km" : "740", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 3216",
+                "km" : "1200 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 4286",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }
+        },
+        {
+            "id": 14,
+            "title" : "KTM Duke 200 (ABS)",
+            "url" : "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/246/medium/Duke_200_ABS.png?1559098797",
+            "HOURLY" : {
+                "price":"49",
+                "km": "10.0",
+                "Excess" :"₹ 6.0"
+            },
+            "DAYS7" :  {
+                "price" :"₹ 2412", 
+                "km" : "740", 
+                "Excess": "₹ 3.0"
+            },
+            "DAYS15" : {
+                "price": "₹ 3216",
+                "km" : "1200 ",
+                "Excess" : "₹ 3.0"
+            },
+            "DAYS30" : {
+                "price" : "₹ 4286",
+                "km" : "2000", 
+                "Excess" : "₹ 3.0"
+            }
+        }
+    ]
+}
