@@ -1,0 +1,163 @@
+#payment-container{
+    width: 40%;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 550px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+#payment-container img{
+    margin-left: 200px;
+}
+#left-right{
+    display: flex;
+    justify-content: space-around;
+}
+#total{
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid gray;
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    padding-top: 20px;
+    font-weight: bold;
+}
+#payment_button{
+    width: 90%;
+    height: 40px;
+    background-color: #fed250;
+    margin: 30px 20px 0px 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+/* footer part */
+
+body{
+    font-family: "Muli", sans-serif;
+}
+
+#footer{
+    background-color: rgb(49, 48, 48);
+    font-family: "Muli", sans-serif;
+}
+
+#footerfirst-part{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    padding-top: 50px;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 60px;
+    padding-right: 80px;
+    justify-content: space-between;
+    padding-right: -80px;
+    column-gap: 230px;
+}
+
+#footerfirst-part>div>p{
+    color: aliceblue;
+}
+#footerfirst-part>div>hr{
+    width: 60px;
+    height: 2px;
+    background-color: #fed250;
+    margin-top: -20px;
+    margin-left: -2px;
+    margin-bottom: 40px;
+}
+#footerfirst-part>div>h3{
+    color: rgb(205, 211, 216);
+}
+
+#footer-logo{
+display: flex;
+}
+#footer-logo>img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 14px;
+}
+.footer-bold{
+    font-weight: bold;
+    font-size : 22px;
+    color: aliceblue;
+    cursor: pointer;;
+}
+#footersecond-part{
+  
+    background-color: rgb(69, 68, 67);
+}
+
+#secondpart-one{
+    width: 85%;
+    margin: auto;
+    
+}
+#secondpart-one>h1{
+    
+    color: rgb(249, 240, 240);
+    padding-top: 50px;
+
+}
+#secondpart-one>p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+}
+#secondpart-second{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+#secondpart-second>div>h1{
+    text-align: center;
+    color: rgb(249, 240, 240);
+}
+#secondpart-second>div>hr{
+    color: white;
+    height: 2px;
+    width: 90px;
+    margin-top: -18px;
+    background-color: #fed250
+    
+}
+#secondpart-second>div>p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+#secondpart-h3{
+    color: aliceblue;
+    text-align: center;
+    margin-top: -25px;
+    padding-bottom: 20px;
+}
+
+#footersecond-part #secondpart-second p{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-second .footer-bold{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-one p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+#footersecond-part #secondpart-one h1{
+    font-size: 20px;
+}
+
+#secondpart-second #ourPresence{
+    font-size: 22px;
+}
