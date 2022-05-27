@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+}
+
+#offerPageBike{
+    margin-top: 75px;
+    overflow: hidden;
+}
+
+#offePageBike img{
+    width: 100%;
+    height: auto;
+    background-position: center;
+
+}
+
+#offerPageBike{
+    display: flex;
+    flex-direction: column;
+}
+
+#offerPageBike #offerAllepy{
+    background-color: rgba(35, 25, 25, 0.521);
+    margin-top: -60px;
+    text-align: center;
+    padding-top: 10px ;
+    height: 58px;
+}
+#offerAllepy h2{
+    color: white;
+}
+
+#offerPageGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    place-items: center;
+    margin-top: 30px;
+    grid-row-gap: 30px;
+}
+
+
+#offerPageGrid div img{
+    width: 400px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}

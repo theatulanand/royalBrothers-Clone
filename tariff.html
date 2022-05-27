@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tariff</title>
+    <link rel="stylesheet" href="./style/tariff.css">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="https://d36g7qg6pk2cm7.cloudfront.net/assets/logo_dark-ecada95f43651e1bc659f7d503b1a694cab678b3d3bff5b9ea56e18f7c6989dc.png" type="image/png" sizes="10x10">
+</head>
+<body>
+    
+    <div id="navbar-container"></div>
+
+    <div id="page-header">
+        <h1 class="header_text">Bike rental tariffs in Bangalore</h1>
+    </div>
+
+    <div id="main"></div>
+    <div id="form_wrapper">
+        <!-- <form id="form"> -->
+        <div id="booking_form">
+            
+            <h2>Search your next ride</h2><span class="material-symbols-outlined cancel">cancel</span>
+            <h4>Pickup</h4>
+            <form id="form"> 
+            <div id="pickup-container">
+                <input type="text" id="calender1" class="calender" min="2022-05-28" max="2023-05-30" placeholder="Date" onfocus="(this.type='date')">
+                <input type="text" name="" id="time1" class="time" placeholder="Time" onfocus="(this.type='time')">
+            </div>
+            <h4>Dropoff</h4>
+            <div id="pickup-container">
+                <input type="text" id="calender2" class="calender" min="2022-05-28" max="2023-05-30" placeholder="Date" onfocus="(this.type='date')" >
+                <input type="text" name="" id="time2" class="time" placeholder="Time" onfocus="(this.type='time')">
+            </div>
+            <input type="submit" value="Search" id="submit" >
+        </form>
+        </div>
+    <!-- </form> -->
+    </div>
+        
+        
+    <!-- footer -->
+    <div id="footer"></div>
+
+
+    <!-- Script -->
+    <script type="module" src="tariff.js"></script>
+</body>
+</html>

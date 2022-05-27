@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#payment-container{
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    margin-top: 130px;
+    margin-left: 120px;
+    margin-right: 120px;
+    gap: 10px;
+}
+
+.yellow_bar{
+    position: fixed;
+    margin-top: 70px;
+    width: 100%;
+    background-color: #fed250;
+    top: 5px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+}
+
+#summary{
+    box-shadow: 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#checkout{
+    padding: 20px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+#filter-date h3{
+    font-size: 1.5rem;
+    line-height: 35px;
+    border-bottom: 1px solid rgb(197, 196, 196);
+    margin-bottom: 20px;
+}
+
+h5{
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 0.9rem;
+    margin-right: 50px;
+}
+
+.pickup-details{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 20px;
+}
+
+.dropoff-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 20px;
+}
+
+.pickup-details p{
+    border-bottom: 1px solid rgb(197, 196, 196);
+    margin-right: 20px;
+    line-height: 25px;
+}
+
+.dropoff-details p{
+    border-bottom: 1px solid rgb(197, 196, 196);
+    margin-right: 20px;
+    line-height: 25px;
+}
+
+
+.price{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-right: 150px;
+}
+
+#bike_image{
+    display: grid;
+    text-align: center;
+}
+
+.km_limit div > p{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 160px;
+    margin-top: 20px;
+}
+
+.excess_km > p {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 130px;
+}
+
+.booking_price{
+    display: flex;
+    justify-content: space-between;
+}
