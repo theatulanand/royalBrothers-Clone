@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Muli", sans-serif;
 }
 
-/* Navbar */
+/* navbar */
 body {
     font-family: "Muli", sans-serif;
     margin: 0px;
@@ -223,8 +222,16 @@ body {
 }
 
 
-
 /* body */
+#payment-container{
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    /* margin-top: 130px; */
+    margin-left: 120px;
+    margin-right: 120px;
+    gap: 10px;
+}
+
 .yellow_bar{
     position: fixed;
     margin-top: 70px;
@@ -237,25 +244,20 @@ body {
     font-size: 15px;
 }
 
-#main{
+#summary{
+    margin-top: 150px;
+    box-shadow: 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+    padding: 20px;
     display: grid;
-    grid-template-columns: 390px 1fr;
-    height: 100%;
+    grid-template-columns: repeat(2,1fr);
 }
 
-.sidebar{
+#checkout{
     margin-top: 150px;
-    padding: 10px;
-    margin-left: 20px;
-}
-
-.itemsection{
-    margin-top: 150px;
-    width: 100%;
-}
-
-tr td{
-    border-bottom: 1px solid red;
+    padding: 20px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
 }
 
 #filter-date h3{
@@ -276,16 +278,15 @@ label{
 }
 
 .pickup-details{
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
     margin-bottom: 20px;
 }
 
 .dropoff-details{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2, 1fr);
     margin-bottom: 20px;
 }
 
@@ -301,50 +302,33 @@ label{
     line-height: 25px;
 }
 
-.itemsection{
+
+.price{
     display: flex;
-    padding: 20px;
-}
-
-.itemsection > div{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
-}
-
-button{
-    background-color: #fed250;
-    padding: 10px;
-    letter-spacing: .5px;
     margin-top: 20px;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    border-radius: 10px;
+    justify-content: space-between;
+    margin-right: 150px;
 }
 
-.itemsection img::after{
-    content: "";
-    display: block;
-    height: 0.1563em;
-    background-color: #fed250;
-    width: 100%;
-    margin-top: 0.5em;
-}
-
-
-.booking_div{
-    border-top: 5px solid rgb(220, 212, 212);
-    border-bottom: 5px solid rgb(227, 221, 221);
-    margin-top: 20px;
+#bike_image{
     display: grid;
-    padding: 10px;
-    grid-template-columns: repeat(2,1fr);
+    text-align: center;
 }
 
-.itemsection h4{
+.km_limit div > p{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 160px;
     margin-top: 20px;
+}
+
+.excess_km > p {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 130px;
+}
+
+.booking_price{
+    display: flex;
+    justify-content: space-between;
 }

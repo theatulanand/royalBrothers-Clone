@@ -1,10 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Muli", sans-serif;
-}
-
 /* Navbar */
 body {
     font-family: "Muli", sans-serif;
@@ -224,127 +217,223 @@ body {
 
 
 
-/* body */
-.yellow_bar{
-    position: fixed;
-    margin-top: 70px;
-    width: 100%;
-    background-color: #fed250;
-    top: 5px;
-    height: 50px;
-    text-align: center;
-    padding: 15px;
-    font-size: 15px;
+
+
+
+body{
+    font-family: "Muli", sans-serif;
 }
 
-#main{
-    display: grid;
-    grid-template-columns: 390px 1fr;
-    height: 100%;
+#subscription-container {
+    margin-top: 3px;
+    width: 90%;
+    background-image: url("https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/RBX_landing_web-8b84ff099c1cd0851362d28adccdcc8ca829a0fc36a2e3c5c01e1ce4764f0a7a.jpg");
+    background-size: 100%;
+    height: 500px;
+    padding-top: 14%;
+    padding-left: 10%;
 }
 
-.sidebar{
-    margin-top: 150px;
-    padding: 10px;
-    margin-left: 20px;
-}
-
-.itemsection{
-    margin-top: 150px;
-    width: 100%;
-}
-
-tr td{
-    border-bottom: 1px solid red;
-}
-
-#filter-date h3{
-    font-size: 1.5rem;
-    line-height: 35px;
-    border-bottom: 1px solid rgb(197, 196, 196);
-    margin-bottom: 20px;
-}
-
-h5{
-    font-size: 1.0rem;
-    margin-bottom: 10px;
-}
-
-label{
-    font-size: 0.9rem;
-    margin-right: 50px;
-}
-
-.pickup-details{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    margin-bottom: 20px;
-}
-
-.dropoff-details{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin-bottom: 20px;
-}
-
-.pickup-details p{
-    border-bottom: 1px solid rgb(197, 196, 196);
-    margin-right: 20px;
-    line-height: 25px;
-}
-
-.dropoff-details p{
-    border-bottom: 1px solid rgb(197, 196, 196);
-    margin-right: 20px;
-    line-height: 25px;
-}
-
-.itemsection{
-    display: flex;
-    padding: 20px;
-}
-
-.itemsection > div{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
-}
-
-button{
-    background-color: #fed250;
-    padding: 10px;
-    letter-spacing: .5px;
-    margin-top: 20px;
-    cursor: pointer;
-    outline: none;
-    border: none;
+#subscription-container #inside-container{
+    background: white;
+    width: 23%;
+    padding: 40px 40px 40px 40px;
     border-radius: 10px;
 }
 
-.itemsection img::after{
-    content: "";
-    display: block;
-    height: 0.1563em;
-    background-color: #fed250;
-    width: 100%;
-    margin-top: 0.5em;
-}
-
-
-.booking_div{
-    border-top: 5px solid rgb(220, 212, 212);
-    border-bottom: 5px solid rgb(227, 221, 221);
-    margin-top: 20px;
-    display: grid;
+#subscription-container #inside-container input{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 40%;
     padding: 10px;
-    grid-template-columns: repeat(2,1fr);
+    cursor: pointer;
+    border: none;
+    border: 1px solid #9999;
+    border-radius: 5px;
 }
 
-.itemsection h4{
-    margin-top: 20px;
+#subscription-container #inside-container label{
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#subscription-container #inside-container #button{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #fed250;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#howit-works{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+#howit-works>h2{
+    text-align: center;
+}
+#howit-works>hr{
+background-color: #fed250;
+height: 2px;
+width: 100px;
+margin-top: -15px;
+}
+#howit-works-inside img{
+    width: 90px;
+    height: 50px;
+}
+
+#howit-works-inside{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    margin-top: 100px;
+    grid-gap: 80px;
+    
+}
+#whyrent{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+#whyrent>div>img{
+    width: 100%;
+}
+#whyrent>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
+#footer{
+    background-color: rgb(49, 48, 48);
+    font-family: "Muli", sans-serif;
+}
+
+#footerfirst-part{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    padding-top: 50px;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 60px;
+    padding-right: 80px;
+    justify-content: space-between;
+    padding-right: -80px;
+    column-gap: 230px;
+}
+
+#footerfirst-part>div>p{
+    color: aliceblue;
+}
+#footerfirst-part>div>hr{
+    width: 60px;
+    height: 2px;
+    background-color: #fed250;
+    margin-top: -20px;
+    margin-left: -2px;
+    margin-bottom: 40px;
+}
+#footerfirst-part>div>h3{
+    color: rgb(205, 211, 216);
+}
+
+#footer-logo{
+display: flex;
+}
+#footer-logo>img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 14px;
+}
+.footer-bold{
+    font-weight: bold;
+    font-size : 22px;
+    color: aliceblue;
+    cursor: pointer;;
+}
+#footersecond-part{
+  
+    background-color: rgb(69, 68, 67);
+}
+
+#secondpart-one{
+    width: 85%;
+    margin: auto;
+    
+}
+#secondpart-one>h1{
+    
+    color: rgb(249, 240, 240);
+    padding-top: 50px;
+
+}
+#secondpart-one>p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+}
+#secondpart-second{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+#secondpart-second>div>h1{
+    text-align: center;
+    color: rgb(249, 240, 240);
+}
+#secondpart-second>div>hr{
+    color: white;
+    height: 2px;
+    width: 90px;
+    margin-top: -18px;
+    background-color: #fed250
+    
+}
+#secondpart-second>div>p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+#secondpart-h3{
+    color: aliceblue;
+    text-align: center;
+    margin-top: -25px;
+    padding-bottom: 20px;
+}
+
+#footersecond-part #secondpart-second p{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-second .footer-bold{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-one p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+#footersecond-part #secondpart-one h1{
+    font-size: 20px;
+}
+
+#secondpart-second #ourPresence{
+    font-size: 22px;
 }

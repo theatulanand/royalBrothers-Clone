@@ -58,7 +58,7 @@ export const displayData = (data, parentNode) => {
 
     //1st 12 hrs condition
     let first_con = document.createElement("table")
-    first_con.innerHTML = `<tr><td>Booking Time (0- 24 hrs)</td><td><strong>${el.HOURLY.price}</strong>/hr</td></tr> <tr><td>Booking Time (>24 hrs)</td><td><strong>${el.HOURLY.price}</strong>/hr</td></tr>`
+    first_con.innerHTML = `<tr><td>Booking Time (0- 24 hrs)</td><td><strong>₹ ${el.HOURLY.price}</strong>/hr</td></tr> <tr><td>Booking Time (>24 hrs)</td><td><strong>₹ ${el.HOURLY.price}</strong>/hr</td></tr>`
     
 
     innerDiv.append(weekday_head, min_booking, first_con)
@@ -78,7 +78,7 @@ export const displayData = (data, parentNode) => {
     min_weekends.style.padding = "10px";
     // condition rules
     let weekends_cond = document.createElement("table")
-    weekends_cond.innerHTML = `<tr><td>Booking time(>24hrs)</td><td><strong>${el.HOURLY.price}</strong>/hr</td></tr>`
+    weekends_cond.innerHTML = `<tr><td>Booking time(>24hrs)</td><td><strong> ₹ ${el.HOURLY.price}</strong>/hr</td></tr>`
     weekends.append(weekends_head, min_weekends, weekends_cond)
     weekends.style.textAlign = "left"
 

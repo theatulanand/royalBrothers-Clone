@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Result</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./style/footer.css" >
-    <link rel="stylesheet" href="./style/searchResult.css">
+    <link rel="stylesheet" href="./style/summary.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="icon" href="https://d36g7qg6pk2cm7.cloudfront.net/assets/logo_dark-ecada95f43651e1bc659f7d503b1a694cab678b3d3bff5b9ea56e18f7c6989dc.png" type="image/png" sizes="10x10">
 </head>
@@ -36,7 +36,8 @@
                 <i class="fa fa-angle-down"> </i>
             </div>
         </div>
-         <div id="navRight">
+    
+        <div id="navRight">
             <div id="navLoginSignup">
                 <div id="login">Login</div>
                 <div id="signup">Signup</div>
@@ -77,14 +78,21 @@
     </div>
 
 
-    <!-- Main contain -->
+
+    <!-- main container -->
+
+    <div id="navbar-container"></div>
     <div class="yellow_bar">Now rent two wheelers for <strong> 7 days </strong> at a lower special price </div>
-    
-    <div id="main">
-        <div class="sidebar">
+
+
+    <div id="payment-container">
+        <div id="summary">
+            <div id="bike_image">
+                <h2>SUMMARY</h2>
+
+            </div>
+            
             <div id="filter-date">
-                <h3>Filter</h3>
-                <h5>Select Date & Time</h5>
                 <div class="pickup-details">
                     <label for="">Pickup date</label>
                     <label for="">Time</label>
@@ -99,20 +107,32 @@
                     <div class="dropofft"></div>
                 </div>
 
-                <div class="SearchDuration">
-                    <label for="">Search Duration</label>
-                   <div class="sd"></div>
+                <div id="address">
+                    <p>Vishalpur (Nehru Bridge Corner)</p>
+                    <p>B 429, Sakar-7 Ashram Rd, Vishalpur, Nehru Bridge Corner, Ahmedabad, Gujarat 380009</p>
                 </div>
+
+               
+                <div class="km_limit"></div>
+                <div class="excess_km"></div>
+                <div class="price"></div>
+        </div>
+        </div>
+
+        <div id="checkout">
+            <h2>CHECKOUT</h2>
+            <div class="booking_fee">
+                <div class="booking_price"></div>
             </div>
         </div>
-        <div class="itemsection"></div>
+    </div>
     </div>
 
+   
     <div id="footer"></div>
 
-
-    <script src="nav.js"></script>
-    <script type="module" src="searchResult.js"></script>
-
+    <script src="./Components/nav.js"></script>
+    <script src="summary.js" type="module"></script>
+    
 </body>
 </html>
