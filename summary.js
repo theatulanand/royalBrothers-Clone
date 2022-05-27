@@ -89,4 +89,23 @@ const showKM = (data2) => {
 // booking 
 
 let booking_div = document.querySelector(".booking_price")
-booking_div.innerHTML = `<p>Booking Fees</h4> <p> <strong>₹ ${price}</strong></span>`
+booking_div.innerHTML = `<p>Booking Fees </p> <span><strong>₹ ${price}</strong></span>`
+
+let cgst = (price/ 100) * 14
+
+let cgst_div = document.querySelector(".cgst")
+cgst_div.innerHTML = `<p>CGST(14%)</p> <span><strong>₹ ${Math.round(cgst, 4)} </strong></span>`
+
+let sgst_div = document.querySelector(".sgst")
+sgst_div.innerHTML = `<p>SGST(14%)</p> <span><strong>₹ ${Math.round(cgst, 4)} </strong></span>`
+
+let refund = document.querySelector(".refundable")
+refund.innerHTML = `<p>Refundable Deposit</p> <span><strong>₹ ${200.00} </strong></span>`
+
+let total = price + cgst + cgst + 200
+
+let total_div = document.querySelector(".total")
+total_div.innerHTML = `<p><strong> Total Payable Amount</p> <span> ₹ ${Math.round(total)} </strong> </span>`
+
+let make_pay = document.querySelector(".make_payment")
+make_pay.innerHTML = `<button>Make Payment</button`
