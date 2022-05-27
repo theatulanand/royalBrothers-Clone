@@ -317,6 +317,11 @@ body {
     height: 60%;
 }
 
+#sliderContainer div{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
 
 #headerContainer {
     margin-top: 3px;
@@ -540,4 +545,13 @@ display: flex;
 
 #secondpart-second #ourPresence{
     font-size: 22px;
+}
+
+#margin-required{
+    margin-top: 850px;
+}
+
+#navOptions a{
+    text-decoration: none;
+    color: black;
 }

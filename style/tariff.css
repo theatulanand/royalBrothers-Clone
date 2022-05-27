@@ -40,6 +40,13 @@
     padding: 20px;
 }
 
+#navOptions div a{
+    text-decoration: none;
+    color: black;
+}
+
+#navO
+
 #navOptions div:hover {
     cursor: pointer;
     background-color: #fed250;
