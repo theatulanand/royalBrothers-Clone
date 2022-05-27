@@ -1,0 +1,217 @@
+body{
+    font-family: "Muli", sans-serif;
+}
+
+#subscription-container {
+    margin-top: 3px;
+    width: 90%;
+    background-image: url("https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/RBX_landing_web-8b84ff099c1cd0851362d28adccdcc8ca829a0fc36a2e3c5c01e1ce4764f0a7a.jpg");
+    background-size: 100%;
+    height: 500px;
+    padding-top: 14%;
+    padding-left: 10%;
+}
+
+#subscription-container #inside-container{
+    background: white;
+    width: 23%;
+    padding: 40px 40px 40px 40px;
+    border-radius: 10px;
+}
+
+#subscription-container #inside-container input{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 40%;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #9999;
+    border-radius: 5px;
+}
+
+#subscription-container #inside-container label{
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#subscription-container #inside-container #button{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #fed250;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#howit-works{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+#howit-works>h2{
+    text-align: center;
+}
+#howit-works>hr{
+background-color: #fed250;
+height: 2px;
+width: 100px;
+margin-top: -15px;
+}
+#howit-works-inside img{
+    width: 90px;
+    height: 50px;
+}
+
+#howit-works-inside{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    margin-top: 100px;
+    grid-gap: 80px;
+    
+}
+#whyrent{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+#whyrent>div>img{
+    width: 100%;
+}
+#whyrent>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
+#footer{
+    background-color: rgb(49, 48, 48);
+    font-family: "Muli", sans-serif;
+}
+
+#footerfirst-part{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    padding-top: 50px;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 60px;
+    padding-right: 80px;
+    justify-content: space-between;
+    padding-right: -80px;
+    column-gap: 230px;
+}
+
+#footerfirst-part>div>p{
+    color: aliceblue;
+}
+#footerfirst-part>div>hr{
+    width: 60px;
+    height: 2px;
+    background-color: #fed250;
+    margin-top: -20px;
+    margin-left: -2px;
+    margin-bottom: 40px;
+}
+#footerfirst-part>div>h3{
+    color: rgb(205, 211, 216);
+}
+
+#footer-logo{
+display: flex;
+}
+#footer-logo>img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 14px;
+}
+.footer-bold{
+    font-weight: bold;
+    font-size : 22px;
+    color: aliceblue;
+    cursor: pointer;;
+}
+#footersecond-part{
+  
+    background-color: rgb(69, 68, 67);
+}
+
+#secondpart-one{
+    width: 85%;
+    margin: auto;
+    
+}
+#secondpart-one>h1{
+    
+    color: rgb(249, 240, 240);
+    padding-top: 50px;
+
+}
+#secondpart-one>p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+}
+#secondpart-second{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+#secondpart-second>div>h1{
+    text-align: center;
+    color: rgb(249, 240, 240);
+}
+#secondpart-second>div>hr{
+    color: white;
+    height: 2px;
+    width: 90px;
+    margin-top: -18px;
+    background-color: #fed250
+    
+}
+#secondpart-second>div>p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+#secondpart-h3{
+    color: aliceblue;
+    text-align: center;
+    margin-top: -25px;
+    padding-bottom: 20px;
+}
+
+#footersecond-part #secondpart-second p{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-second .footer-bold{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-one p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+#footersecond-part #secondpart-one h1{
+    font-size: 20px;
+}
+
+#secondpart-second #ourPresence{
+    font-size: 22px;
+}
