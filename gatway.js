@@ -123,6 +123,4 @@
             alert("Inavlid Card Number");
             return;
         }
-
-        alert("All fine")
     })
