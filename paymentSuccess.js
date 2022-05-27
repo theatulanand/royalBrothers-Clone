@@ -50,7 +50,6 @@
         cityDiv.addEventListener("click", function () {
             localStorage.setItem("cityName", ele.name);
             modal.style.display = "none";
-            document.getElementById("card").style.display = "block";
             document.getElementById("location").innerText = localStorage.getItem("cityName");
         })
 
@@ -69,28 +68,23 @@
     // When the user clicks the button, open the modal 
     btn.onclick = function () {
         modal.style.display = "block";
-        document.getElementById("card").style.display = "none";
     }
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
         modal.style.display = "none";
-        document.getElementById("card").style.display = "block";
     }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
-            document.getElementById("card").style.display = "block";
         }
     }
 
     if(localStorage.getItem("login") == "true"){
         changeNav();
     }
-
-    localStorage.setItem("login","true");
     
     function changeNav(){
         let box = document.getElementById("navLoginSignup");
@@ -104,8 +98,6 @@
 
         let name = document.createElement("p");
 
-        name.innerHTML = "   " + "Atul Kumar"
-
         name.innerHTML = "   " +  JSON.parse(localStorage.getItem("loginData")).name;
 
         name.style.color = "black"
@@ -113,18 +105,11 @@
         img.style.width = "45px";
         img.style.margin = "auto";
 
-        box.style.marginRight = "10px"
+        box.style.marginRight = "15px"
     
         box.append(img,name);
     }
 
-    document.getElementById("submit").addEventListener("click",function(){
-        event.preventDefault();
-        if(document.getElementById("cardNumber").value.length < 12){
-            alert("Inavlid Card Number");
-            return;
-        }
-
-        window.location.href = "./otpAuth.html";
-        return false;
-    })
+    function goToHome(){
+        window.location.href = "./index.html"
+    }

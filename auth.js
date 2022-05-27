@@ -213,7 +213,7 @@ function verifyData(data){
             isLogin = true;
             // alert("Login Success");
 
-            window.location.href = "./index.html";
+            window.location.href = "/tariff.html";
             return false;
 
             changeNav(1);
