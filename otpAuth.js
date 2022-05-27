@@ -1,11 +1,5 @@
-import {footer} from "./Components/footer.js";
-
-let footer_div = document.getElementById("footer")
-
-footer_div.innerHTML = footer()
-
-
-document.getElementById("location").innerText = localStorage.getItem("cityName")
+    
+    document.getElementById("location").innerText = localStorage.getItem("cityName")
     
     // modal data 
     const cityData = []
@@ -56,7 +50,7 @@ document.getElementById("location").innerText = localStorage.getItem("cityName")
         cityDiv.addEventListener("click", function () {
             localStorage.setItem("cityName", ele.name);
             modal.style.display = "none";
-            document.getElementById("location").innerText = localStorage.getItem("cityName")
+            document.getElementById("location").innerText = localStorage.getItem("cityName");
         })
 
         document.getElementById("modelCity").append(cityDiv)
@@ -88,69 +82,42 @@ document.getElementById("location").innerText = localStorage.getItem("cityName")
         }
     }
 
- 
-if(localStorage.getItem("login") == "true"){
-    changeNav(0);
-}
-
-function changeNav(i){
-    if(i == 1){
-        window.location.reload();
+    if(localStorage.getItem("login") == "true"){
+        changeNav();
     }
-    let box = document.getElementById("navLoginSignup");
-    box.append("");
-    document.getElementById("signup").style.display = "none";
-    document.getElementById("login").style.display = "none";
-
     
-    let img = document.createElement("img");
+    function changeNav(){
+        let box = document.getElementById("navLoginSignup");
     
-    img.src = "https://d36g7qg6pk2cm7.cloudfront.net/assets/profile-f17aa1dfbd0cb562142f1dcb10bb7ad33e1ac8417ad29a1cdab7dfbfbbfe2f15.png"
+        document.getElementById("signup").style.display = "none";
+        document.getElementById("login").style.display = "none";
+    
+        let img = document.createElement("img");
+    
+        img.src = "https://d36g7qg6pk2cm7.cloudfront.net/assets/profile-f17aa1dfbd0cb562142f1dcb10bb7ad33e1ac8417ad29a1cdab7dfbfbbfe2f15.png"
 
-    let name = document.createElement("p");
+        let name = document.createElement("p");
 
-    name.innerHTML = "   " +  JSON.parse(localStorage.getItem("loginData")).name;
+        name.innerHTML = "   " +  JSON.parse(localStorage.getItem("loginData")).name;
 
-    name.style.color = "black"
+        name.style.color = "black"
+    
+        img.style.width = "45px";
+        img.style.margin = "auto";
 
-    img.style.width = "45px";
-    img.style.margin = "auto";
+        box.style.marginRight = "15px"
+    
+        box.append(img,name);
+    }
 
-    box.style.marginRight = "15px"
+    document.getElementById("submitOTP").addEventListener("click",function(){
+        event.preventDefault();
 
-    box.append(img,name);
-}
+        window.location.href = "./paymentSuccess.html"
+    })
 
+    function goTOSuccess(){
+        event.preventDefault();
 
-const sliderImages = [
-    "https://github.com/theatulanand/royalBrothers-Clone/blob/chinni/images/cities.png?raw=true",
-    "https://github.com/theatulanand/royalBrothers-Clone/blob/chinni/images/rating.png?raw=true",
-    "images/bike.png",
-]
-
-const sliderContainer = document.querySelector("#sliderContainer");
-
-function slidestart() {
-    var count = 0;
-    setInterval(function () {
-        sliderContainer.innerHTML = null;
-        if (count === sliderImages.length) {
-            count = 0;
-        }
-        const sliderBox = document.createElement("div");
-        sliderBox.setAttribute("id", "sliderDiv");
-
-        const sliderimg = document.createElement("img");
-        sliderimg.src = sliderImages[count];
-
-        sliderimg.setAttribute("id", "sliderimg");
-
-        sliderBox.append(sliderimg);
-
-        sliderContainer.append(sliderBox);
-        count++;
-
-    }, 1500)
-
-}
-slidestart();
+        window.location.href = "./paymentSuccess.html"
+    }

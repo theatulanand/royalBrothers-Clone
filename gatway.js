@@ -1,11 +1,5 @@
-import {footer} from "./Components/footer.js";
-
-let footer_div = document.getElementById("footer")
-
-footer_div.innerHTML = footer()
-
-
-document.getElementById("location").innerText = localStorage.getItem("cityName")
+    
+    document.getElementById("location").innerText = localStorage.getItem("cityName")
     
     // modal data 
     const cityData = []
@@ -56,7 +50,8 @@ document.getElementById("location").innerText = localStorage.getItem("cityName")
         cityDiv.addEventListener("click", function () {
             localStorage.setItem("cityName", ele.name);
             modal.style.display = "none";
-            document.getElementById("location").innerText = localStorage.getItem("cityName")
+            document.getElementById("card").style.display = "block";
+            document.getElementById("location").innerText = localStorage.getItem("cityName");
         })
 
         document.getElementById("modelCity").append(cityDiv)
@@ -74,83 +69,62 @@ document.getElementById("location").innerText = localStorage.getItem("cityName")
     // When the user clicks the button, open the modal 
     btn.onclick = function () {
         modal.style.display = "block";
+        document.getElementById("card").style.display = "none";
     }
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
         modal.style.display = "none";
+        document.getElementById("card").style.display = "block";
     }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
+            document.getElementById("card").style.display = "block";
         }
     }
 
- 
-if(localStorage.getItem("login") == "true"){
-    changeNav(0);
-}
-
-function changeNav(i){
-    if(i == 1){
-        window.location.reload();
+    if(localStorage.getItem("login") == "true"){
+        changeNav();
     }
-    let box = document.getElementById("navLoginSignup");
-    box.append("");
-    document.getElementById("signup").style.display = "none";
-    document.getElementById("login").style.display = "none";
 
+    localStorage.setItem("login","true");
     
-    let img = document.createElement("img");
+    function changeNav(){
+        let box = document.getElementById("navLoginSignup");
     
-    img.src = "https://d36g7qg6pk2cm7.cloudfront.net/assets/profile-f17aa1dfbd0cb562142f1dcb10bb7ad33e1ac8417ad29a1cdab7dfbfbbfe2f15.png"
+        document.getElementById("signup").style.display = "none";
+        document.getElementById("login").style.display = "none";
+    
+        let img = document.createElement("img");
+    
+        img.src = "https://d36g7qg6pk2cm7.cloudfront.net/assets/profile-f17aa1dfbd0cb562142f1dcb10bb7ad33e1ac8417ad29a1cdab7dfbfbbfe2f15.png"
 
-    let name = document.createElement("p");
+        let name = document.createElement("p");
 
-    name.innerHTML = "   " +  JSON.parse(localStorage.getItem("loginData")).name;
+        name.innerHTML = "   " + "Atul Kumar"
 
-    name.style.color = "black"
+        name.innerHTML = "   " +  JSON.parse(localStorage.getItem("loginData")).name;
 
-    img.style.width = "45px";
-    img.style.margin = "auto";
+        name.style.color = "black"
+    
+        img.style.width = "45px";
+        img.style.margin = "auto";
 
-    box.style.marginRight = "15px"
+        box.style.marginRight = "10px"
+    
+        box.append(img,name);
+    }
 
-    box.append(img,name);
-}
-
-
-const sliderImages = [
-    "https://github.com/theatulanand/royalBrothers-Clone/blob/chinni/images/cities.png?raw=true",
-    "https://github.com/theatulanand/royalBrothers-Clone/blob/chinni/images/rating.png?raw=true",
-    "images/bike.png",
-]
-
-const sliderContainer = document.querySelector("#sliderContainer");
-
-function slidestart() {
-    var count = 0;
-    setInterval(function () {
-        sliderContainer.innerHTML = null;
-        if (count === sliderImages.length) {
-            count = 0;
+    document.getElementById("submit").addEventListener("click",function(){
+        event.preventDefault();
+        if(document.getElementById("cardNumber").value.length < 12){
+            alert("Inavlid Card Number");
+            return;
         }
-        const sliderBox = document.createElement("div");
-        sliderBox.setAttribute("id", "sliderDiv");
 
-        const sliderimg = document.createElement("img");
-        sliderimg.src = sliderImages[count];
-
-        sliderimg.setAttribute("id", "sliderimg");
-
-        sliderBox.append(sliderimg);
-
-        sliderContainer.append(sliderBox);
-        count++;
-
-    }, 1500)
-
-}
-slidestart();
+        window.location.href = "./otpAuth.html";
+        return false;
+    })

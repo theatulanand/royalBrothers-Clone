@@ -1,19 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>paymentPage</title>
-    <link rel="stylesheet" href="payment.css">
+    <title>Authentication</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/style/auth.css" rel="stylesheet">
 </head>
+
 <body>
-    
-    <div id="payment-container">
-        <h2 style="text-align: center;margin-top: 30px;padding-top:10px;">Payment Details</h2>
+    <div id="navbarContainer">
+        <div id="navLogoDiv">
+            <img src="https://i.ibb.co/WK768hX/download.png" alt="logo" id="navLogo">
+        </div>
+        <div id="navOptions">
+            <div>
+                <img style="width: 54px;"
+                    src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/RBX_logo-7618eb109a17dcfa44e88596c831606746fc124a000553458d6b7fc1bf9a6345.png"
+                    alt="">
+            </div>
+            <div>Tarrif</div>
+            <div style="display: flex;">What's new &nbsp;
+                <i class="fa fa-angle-down"> </i>
+            </div>
+            <div>Careers</div>
+            <div>Offers</div>
+            <div style="display: flex;">Partner with us &nbsp;
+                <i class="fa fa-angle-down"> </i>
+            </div>
+        </div>
+        <div id="navRight">
+            <div id="navLoginSignup">
+                <div id="login">Login</div>
+                <div id="signup">Signup</div>
+            </div>
+            <div id="navLocation" style="cursor: pointer;">
+                <img src="https://i.ibb.co/N160zRK/location.png" alt="">
+                <button>
+                    <p id="location">Banglore</p>
+                </button>
+                <i class="fa fa-angle-down"></i>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modelTop">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/logo-b03af389c15608bf4fa52378f448a48a9c8f92f70242cc88340e971e7599d6ae.png"
+                        alt="">
+                    <p style="font-weight: 300;"> | &nbsp; Rental Bike</p>
+                </div>
+                <div id="modelSearch">
+                    <div id="searchicon">
+                        <img src="https://i.ibb.co/4MPMFh4/search.png" alt="">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Search or type city to select">
+                    </div>
+                </div>
+                <div id="modelCity">
+
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- footerPart -->
+    <div id="mainAuth" style="padding-top: 100px;">
+        <h2 style="text-align: center; font-weight: 200;">Rent . Ride . Explore</h2>
+        <div id="authBox">
+            <div class="wrapper">
+                <!-- <div class="title-text">
+                    <div class="title login">Login Form</div>
+                    <div class="title signup">Signup Form</div>
+                </div> -->
+                <div class="form-container">
+                    <div class="slide-controls">
+                        <input type="radio" name="slide" id="login" checked>
+                        <input type="radio" name="slide" id="signup" checked>
+                        <label for="login" class="slide login" id = "loginTop">Login</label>
+                        <label for="signup" class="slide signup" id = "signupTop">Signup</label>
+                        <div class="slider-tab"></div>
+                    </div>
+                    <div class="form-inner">
+                        <form action="#" class="login">
+                            <div class="field">
+                                <input type="text" id = "authEmail" placeholder="Email Address" required>
+                            </div>
+                            <div class="field">
+                                <input type="password" id = "authPass" placeholder="Password" required>
+                            </div>
+                            <div class="pass-link"><a href="#">Forgot password?</a></div>
+                            <div class="field btn">
+                                <div class="btn-layer"></div>
+                                <input type="submit" onclick="authData()" value="Login">
+                            </div>
+                            <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+                        </form>
+
+                        <form class="signup">
+                            <div class="field">
+                                <input type="text" id = "userName" placeholder="Name" required>
+                            </div>
+                            <div class="field">
+                                <input type="email" id = "userEmail" placeholder="Email Address" required>
+                            </div>
+                            <div class="field">
+                                <input type="Mobile" id = "userMobile" placeholder="Mobile" required>
+                            </div>
+                            <div class="field">
+                                <input type="password" id = "userPass" placeholder="Password" required>
+                            </div>
+                            <div class="field btn">
+                                <div class="btn-layer"></div>
+                                <input type="submit" onclick="addData()"  value="Signup">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="invalidPass">
+        <p id = "alertTxt">Invalid email / password combination</p>
+    </div>
+
     <div id="footer">
         <div id="footerfirst-part">
             <div >
@@ -75,7 +191,7 @@
             <div style=" margin-left: -90px;">
                 <h3 style = "font-size: 17px">DOWNLOAD OUR APP</h3>
                 <hr>
-                <div id="footerdownload-app" style="display:flex">
+                <div id="footerdownload-app" style="display:block">
                     <img style="margin-right: 50px;"
                         src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/app_store-4407bc8ced0d52a50ff042ce51e32d51de3e11717955798ec54c6a28e7926c7c.png">
                     <img
@@ -89,52 +205,6 @@
 
 
         <div id="footersecond-part">
-
-            <div id="secondpart-one">
-                <h1>Bike rentals in Alleppey</h1>
-                <p>Welcome to Alleppey, one of the most alluring cities in India and a popular holiday destination among
-                    people all over the globe. This tiny city in Kerala houses a huge nexus of waterways and gorgeous
-                    backwaters. It also has amazing roads, so the most fun way of traveling in the city is via bike
-                    rental in Alleppey.</p>
-            </div>
-
-            <div id="secondpart-one">
-                <h1>Ride through paradise with bike rent in Alleppey</h1>
-                <p>If you’re planning on visiting a laidback city with a beach, don’t think twice about going to
-                    Alleppey. Officially known as Alapuzzha, this city is Kerala’s most popular tourist spot. If you are
-                    someone who loves water bodies, then Alleppey will steal your heart. It has picturesque lagoons,
-                    canals, backwaters, and beaches. These attractions make Alleppey a popular honeymoon destination as
-                    well.</p>
-                <p>Taking a two-wheeler on rent in Alleppey will help you get around the city with absolute ease. It is
-                    small and has well-built roads, so traveling on a bike on rent in Alleppey is relatively
-                    comfortable. While there are several agencies offering bike rentals in Alleppey, Royal Brothers
-                    should be your number one choice because we offer the biggest range of two-wheelers at the best
-                    prices on the market.</p>
-                <p>This greenery-fringed city is known for its lustrous landscape and backwaters. Alleppey is famous for
-                    its houseboats, earning the well-deserved nickname - the Venice of the East. This city will bring
-                    out the romantic in you with its pristine beaches and calm lagoons. You could enjoy a lovely ride
-                    around the city with bikes for rent in Alleppey. When in Alleppey, one must not miss a tour on its
-                    famous houseboats. Explore the waters and taste some of the most extraordinary freshwater fish and
-                    seafood dishes right on the boat. Soak in the sun and bask in the green glory of the Alleppey, a
-                    truly magical paradise.</p>
-            </div>
-
-            <div id="secondpart-one">
-                <h1>One-stop shop for bike rentals in Alleppey</h1>
-                <p>Alleppey is a small but incredibly clean city. It is a pleasure to ride around on the streets of this
-                    city. Thanks to bike rental in Alleppey, it is extremely easy to get about. Explore the city’s
-                    colorful markets for amazing local handloom and trinkets. It would be a shame if you missed out on
-                    Alleppey’s famous cuisine. With your own bike rent in Alleppey, you can stop wherever you would
-                    like, something you cannot enjoy while traveling in a bus.</p>
-                <p>Royal Brothers specializes in bike rental in Alleppey and 40 other cities across India. We have the
-                    biggest inventory of two-wheelers available for rent. We ensure that all our vehicles are regularly
-                    washed and serviced so our customers face no problems during their travels.</p>
-                <p>If you’re looking for bikes for rent in Alleppey, visit the Royal Brothers website and pick the
-                    two-wheeler of your choosing. We have motorcycles by Royal Enfield, Honda and Yamaha. Our booking
-                    process is completely transparent and our deliveries are always on time. For more details on bike
-                    rentals in Alleppey and other services, get in touch with our executives today.</p>
-            </div>
-
             <div id="secondpart-second">
                 <div>
                     <h1 id = "ourPresence">OUR PRESENCE</h1>
@@ -230,93 +300,9 @@
             </div>
         </div>
 
-        <h3 id="secondpart-h3">Made with <img style="margin-bottom: -8px;"
-                src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/like-b8b570f724101252e5c39d8bd66246607fb226e93e3ba17b0516209b20832345.png">
-            by team Royal Brothers</h3>
+        <h3 id="secondpart-h3" >Made with ❤️ by team Royal Brothers</h3>
 
     </div>
-
-
 </body>
+<script src="./auth.js"></script>
 </html>
-
-<script>
-
-const payment_container  = document.querySelector("#payment-container");
-
-
-    const id = JSON.parse(localStorage.getItem("idAndMonth")) || [];
-    const payment = async() => {
-
-        const res = await fetch(`http://localhost:3000/scooties/${id}`);
-        const data = await res.json();
-        displayData(data);
-
-    }
-
-payment();
-const displayData = (data)=>{
-   const cityname =  localStorage.getItem("cityName");
-    // console.log(data);
-    const container = document.createElement("div");
-    container.setAttribute("id","paymentMain");
-
-    const leftAndRight = document.createElement("div");
-    leftAndRight.setAttribute("id","left-right");
-
-    const left_part = document.createElement("div");
-    const right_part = document.createElement("div");
-
-    const image = document.createElement("img");
-    image.src = data.url;
-
-    const title  = document.createElement("h3");
-    title.innerText = data.title;
-    title.style.marginLeft = "250px";
-
-    const kmCharge = document.createElement("p");
-    kmCharge.innerText = data.month[1];
-
-    const kmlimit =  document.createElement("p");
-    kmlimit.innerText = "Km Limit";
-
-    const kml = document.createElement("p");
-    kml.innerText = "1500.0 kms/month"
-
-    const excess = document.createElement("p");
-    excess.innerText = "Excess km charge";
-
-    const city = document.createElement("p");
-    city.innerText = "City";
-
-    const cityName = document.createElement("p");
-    cityName.innerText = cityname;
-
-    const total = document.createElement("p");
-    total.innerText = `${data.month[0]} /Montly Rent | ₹ 1500 /Refundable Deposit`;
-    total.setAttribute("id","total");
-
-    const payment_button = document.createElement("button");
-    payment_button.innerText = "BOOK NOW";
-    payment_button.setAttribute("id","payment_button");
-    payment_button.addEventListener("click",function(){
-        paymentButton();
-    })
-    container.append(image,title);
-    left_part.append(kmlimit,excess,city);
-    right_part.append(kml,kmCharge,cityName);
-    
-    payment_container.append(container);
-    leftAndRight.append(left_part,right_part);
-    payment_container.append(leftAndRight);
-    payment_container.append(total);
-    payment_container.append(payment_button);
-   
-    
-}
-
-const paymentButton = ()=>{
-    window.location.href = "./address.html";
-}
-    
-</script>

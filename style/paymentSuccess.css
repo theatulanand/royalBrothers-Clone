@@ -1,11 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
     font-family: "Muli", sans-serif;
+    margin: 0px;
 }
-
-/* navbar */
 
 #navbarContainer {
     display: flex;
@@ -19,8 +15,6 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     position: fixed;
     background-color: white;
-    margin-bottom: 200px;
-    z-index: 1000;
 }
 
 #navLogoDiv {
@@ -40,13 +34,6 @@
     padding: 20px;
 }
 
-#navOptions div a{
-    text-decoration: none;
-    color: black;
-}
-
-#navO
-
 #navOptions div:hover {
     cursor: pointer;
     background-color: #fed250;
@@ -65,7 +52,7 @@
     display: flex;
     align-items: center;
     /* border: 1px solid red; */
-    width: 35%;
+    width: 25%;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
@@ -224,193 +211,181 @@
     cursor: pointer;
 }
 
-
-
-
-/* body */
-#page-header{
+#successConatiner{
+    width: 40%;
+    margin: auto;
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1em;
+    padding-top: 120px;
 }
 
-#main{
+#successConatiner h1{
+    color: green;
+}
+
+#successConatiner button{
+    font-size: 20px;
+    border: none;
+    background-color: #fed250;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#successConatiner button:active{
+    transform: translateY(4px);
+}
+
+
+/* #footer *{
+    border: 1px solid red ;
+} */
+
+#footer{
+    background-color: rgb(49, 48, 48);
+    font-family: "Muli", sans-serif;
+    margin-top: 80px;
+}
+
+.footerfirst-part{
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 45px;
-    row-gap: 25px;
-    margin: 10px 150px;
-    padding: 10px;  
-    position: relative;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 2.5rem 7.5rem;
+    place-items: left;
+
 }
 
-
-#main > div{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px solid rgb(242, 239, 239);
-    padding-top: 10px;
-    border-radius: 10px;
-    gap: 10px;
-}
-
-
-h1{
-    font-size: 2.5rem;
-}
-
-#main div img{
-    width: 250px;
-    align-self: center;
-}
-
-.days_div{
-    margin-top: 10px;
-    flex: auto;
-    text-align: center;
-    padding: 2px;
-    box-shadow: 0rem 0rem 0.2667rem 0rem rgb(190, 190, 187);
-}
-
-.days_div_element{
+.download-app{
     display: flex;
     flex-direction: row;
+    gap: 20px;
+}
+
+.contact_details{
+    color: #ddd;
+    display: flex;
     text-decoration: none;
-    gap: 2px;
-    width: 100%;
-    list-style-type: none;
-    text-align: center;
-    align-items: center;
-    white-space: nowrap;
-    justify-content: space-evenly;
+    gap: 20px;
+    font-size: 0.8rem;
 }
 
-ul li:hover{
-    cursor: pointer;
+.royal_brothers_contact a{
+    padding-bottom: 20px;
 }
 
-#main ul li{
-    padding: 10px;
-}
-
-.active{
-    border-bottom:0.2rem #fad946 solid;
-    background-color: rgba(238,110,115,0.7);
-    cursor: pointer;
-}
-
-#main ul li:first-child{
-    border-bottom: 0.2rem #fdd835 solid;
-}
-
-button{
+.footerfirst-part h3::after{
+    content: "";
+    display: block;
+    height: 0.1563em;
     background-color: #fed250;
-    padding: 10px;
-    letter-spacing: .5px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    cursor: pointer;
-    outline: none;
-    border: none;
+    width: 3.5em;
+    margin-top: 0.5em;
 }
 
-
-td{
-    padding: 0 25px;
-    font-size: 12px;
-}
-
-h5{
-    font-size: 0.8rem;
-}
-
-li{
-    font-size: 0.8rem;
-}
-
-h4{
+.footerfirst-part h3{
+    color: white;
     font-size: 0.9rem;
+    margin-bottom: 1.5rem;
 }
 
-#form_wrapper{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(32, 32, 32, 0.764);
-    z-index: 100;
-    display: grid;
-    place-items: center;
-    justify-content: space-around;
+.footerfirst-part ul li{
+    color: #ddd;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+#footer-logo{
+    display: flex;
+    place-items: flex-start;
+}
+
+#footer-logo img{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+#footersecond-part{
+    background-color: rgb(69, 68, 67);
+}
+
+#secondpart-one{
+    width: 85%;
+    margin: auto;
     
 }
-
-#booking_form{
-    position: absolute;
-    width: 370px;
-    height: 340px; 
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    box-shadow: 0rem 0rem 0.2667rem 0rem rgb(249, 249, 249);
-    text-align: left;
-    padding: 20px;
-    gap: 10px;
-    border-radius: 7px;
-    /* opacity: 1; */
-    /* z-index: 1003;
-    position: fixed;
-    top: 150px;
-    left: 550px; */
-    top: 80px;
-    left: 550px;
-    background-color: rgb(255, 255, 255);
+#secondpart-one h1{
+    color: rgb(249, 240, 240);
+    padding-top: 50px;
 
 }
-
-#booking_form input{
-    padding: 10px;
-    width: 100%;
-    border: 1px solid rgb(228, 224, 224);
-    margin-bottom: 25px;
+#secondpart-one p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+}
+#secondpart-second{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: justify;
 }
 
-.calender{
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+#secondpart-second div h3{
+    margin: 2rem;
+    text-align: center;
+    color: rgb(249, 240, 240);
 }
-
-.time1{
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-#booking_form div{
-    display: flex;
-    justify-content: flex-start;
-}
-
-
-#time { 
-    padding: 15px; 
-}
-
-#submit{
+#secondpart-second div h3::after{
+    content: "";
+    display: block;
+    height: 0.1563em;
     background-color: #fed250;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 10px;
+    width: 3.5em;
+    margin-top: 0.5em;
+    place-items: center;
+    margin: auto;
 }
 
-.cancel{
-    display: inline-block;
-    width: 30px;
-    right: 30px;
-    position: absolute;
-    cursor: pointer;
+
+#secondpart-second div p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+#secondpart-h3{
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: -45px;
+    font-size: 1.0rem;
+    font-weight: 400;
+}
+
+#secondpart-h3 img{
+    width: 20px;
+}
+
+#footersecond-part #secondpart-second p{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-second .footer-bold{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-one p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+#footersecond-part #secondpart-one h1{
+    font-size: 20px;
+}
+
+#secondpart-second #ourPresence{
+    font-size: 22px;
 }

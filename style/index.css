@@ -1,48 +1,7 @@
-body{
-    font-family: "Muli", sans-serif;
-    font-weight: 400;
-}
-
-
-#offerPageBike>div>img{
-    width: 100%;
-}
-#offerPageBike{
-    display: flex;
-    flex-direction: column;
-}
-#offerPageBike>#offerAllepy{
-    background-color: rgba(35, 25, 25, 0.521);
-    margin-top: -60px;
-    text-align: center;
-    padding: -10px;
-    height: 58px;
-}
-#offerAllepy h2{
-    padding-bottom: -30px;
-    color: white;
-}
-#offerPageGrid{
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    grid-gap: 50px;
-    margin-top: 30px;
-    /* border: 1px solid red; */
-}
-
-#offerPageGrid>div>img{
-    width: 100%;
-    height: 200px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    cursor: pointer;
-}
-
 body {
     font-family: "Muli", sans-serif;
     margin: 0px;
+    margin-top: -5px;
 }
 
 #navbarContainer {
@@ -66,7 +25,7 @@ body {
 
 #navOptions {
     display: flex;
-    width: 49%;
+    width: 50%;
     justify-content: space-between;
     align-items: center;
     /* border: 1px solid red; */
@@ -88,13 +47,19 @@ body {
     justify-content: space-between;
     padding: 13px;
     align-items: center;
+    text-decoration: none;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 #navRight {
     display: flex;
     align-items: center;
     /* border: 1px solid red; */
-    width: 25%;
+    width: 30%;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
@@ -139,10 +104,59 @@ body {
     font-size: 15px;
 }
 
+/* header section start */
+
+#headerContainer {
+    margin-top: 3px;
+    width: 90%;
+    background-image: url("https://d36g7qg6pk2cm7.cloudfront.net/assets/new_bikes_banner_web-7a9cd433b72992a1c7674146a0b00e463f1df138048fdd067705e88bf2d99861.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 570px;
+    padding-top: 14%;
+    padding-left: 10%;
+}
+
+
+#headerContainer #header {
+    background: white;
+    width: 23%;
+    padding: 40px 40px 40px 40px;
+    border-radius: 10px;
+}
+
+#headerContainer #header input {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 40%;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #9999;
+    border-radius: 5px;
+}
+
+#headerContainer #header label {
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#headerContainer #header #headerButton {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #fed250;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 
 /* The Modal (background) */
 .modal {
-    display: none;
+    display: block;
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
@@ -247,15 +261,181 @@ body {
     border-radius: 15px;
 }
 
-#cityDiv img:hover{
+
+#cityDiv img:hover {
     transform: scale(1.09);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     cursor: pointer;
 }
 
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    padding-top: 10px;
+}
+
+.features-service-child {
+    display: flex;
+    justify-content: center;
+}
+
+.features-service-child img {
+    padding-right: 12px;
+    height: 60%;
+    padding-top: 4px;
+}
+
+#headertwo {
+    margin-top: 3px;
+    width: 90%;
+    background-image: url("https://raw.githubusercontent.com/Amanullah21/RoyalBrother/main/public/Imgs/rbx.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 570px;
+    padding-top: 14%;
+    padding-left: 10%;
+}
+
+#twoheader input {
+    width: 18%;
+    height: 40px;
+    border-radius: 100px;
+    margin-top: 28%;
+    margin-left: 18%;
+    font-weight: bold;
+    font-size: medium;
+    background-color: #fed250;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#homepagehr {
+    color: white;
+    height: 2px;
+    width: 90px;
+    background-color: #fed250;
+}
+
+#sliderimg {
+    width: 100%;
+    height: 60%;
+}
+
+#sliderContainer div{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#headerContainer {
+    margin-top: 3px;
+    width: 90%;
+    background-image: url("https://d36g7qg6pk2cm7.cloudfront.net/assets/new_bikes_banner_web-7a9cd433b72992a1c7674146a0b00e463f1df138048fdd067705e88bf2d99861.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 570px;
+    padding-top: 14%;
+    padding-left: 10%;
+    font-family: "Muli", sans-serif;
+}
+
+
+#headerContainer #header{
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 23%;
+    padding: 40px 40px 40px 40px;
+    border-radius: 10px;
+}
+#headerContainer #header input{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 40%;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #9999;
+    border-radius: 5px;
+}
+
+#headerContainer #header label{
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#headerContainer #header #headerButton{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #fed250;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#headertwo {
+    margin-top: 3px;
+    width: 90%;
+    background-image: url("https://raw.githubusercontent.com/Amanullah21/RoyalBrother/main/public/Imgs/rbx.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 570px;
+    padding-top: 14%;
+    padding-left: 10%;
+}
+#twoheader input {
+    width: 18%;
+    height: 40px;
+    border-radius: 100px;
+    margin-top: 28%;
+    margin-left: 18%;
+    font-weight: bold;
+    font-size: medium;
+    background-color: #fed250;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    padding-top: 10px;
+}
+.features-service-child {
+    display: flex;
+    justify-content: center;
+}
+.features-service-child img {
+    padding-right: 12px;
+    height: 60%;
+    padding-top: 4px;
+}
+#featurehr {
+    color: white;
+    height: 2px;
+    width: 90px;
+    background-color: #fed250;
+}
+
+#imagefeature {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    gap: 80px;
+    justify-content: center;
+}
+
 #footer{
     background-color: rgb(49, 48, 48);
     font-family: "Muli", sans-serif;
+    margin-top: 800px;
 }
 
 #footerfirst-part{
@@ -371,4 +551,13 @@ display: flex;
 
 #secondpart-second #ourPresence{
     font-size: 22px;
+}
+
+#margin-required{
+    margin-top: 850px;
+}
+
+#navOptions a{
+    text-decoration: none;
+    color: black;
 }

@@ -2,7 +2,7 @@ import { navbar } from "./Components/navbar.js";
 import { footer } from "./Components/footer.js";
 
 let navbar_div = document.getElementById("navbar-container")
-navbar_div.innerHTML = navbar()
+//navbar_div.innerHTML = navbar()
 
 
 let footer_div = document.getElementById("footer")
@@ -89,4 +89,65 @@ const showKM = (data2) => {
 // booking 
 
 let booking_div = document.querySelector(".booking_price")
-booking_div.innerHTML = `<p>Booking Fees</h4> <p> <strong>₹ ${price}</strong></span>`
+booking_div.innerHTML = `<p>Booking Fees </p> <span><strong>₹ ${price}</strong></span>`
+
+let cgst = (price/ 100) * 14
+
+let cgst_div = document.querySelector(".cgst")
+cgst_div.innerHTML = `<p>CGST(14%)</p> <span><strong>₹ ${Math.round(cgst, 4)} </strong></span>`
+
+let sgst_div = document.querySelector(".sgst")
+sgst_div.innerHTML = `<p>SGST(14%)</p> <span><strong>₹ ${Math.round(cgst, 4)} </strong></span>`
+
+let refund = document.querySelector(".refundable")
+refund.innerHTML = `<p>Refundable Deposit</p> <span><strong>₹ ${200.00} </strong></span>`
+
+let total = price + cgst + cgst + 200
+
+let total_div = document.querySelector(".total")
+total_div.innerHTML = `<p><strong> Total Payable Amount</p> <span> ₹ ${Math.round(total)} </strong> </span>`
+
+let make_pay = document.querySelector(".make_payment")
+make_pay.innerHTML = `<button>Make Payment</button`;
+
+make_pay.addEventListener("click",function(){
+  window.location.href = "./gatway.html"
+})
+
+
+
+
+
+if(localStorage.getItem("login") == "true"){
+  changeNav(0);
+}
+
+function changeNav(i){
+  if(i == 1){
+      window.location.reload();
+  }
+  let box = document.getElementById("navLoginSignup");
+  box.append("");
+  document.getElementById("signup").style.display = "none";
+  document.getElementById("login").style.display = "none";
+
+  
+  let img = document.createElement("img");
+  
+  img.src = "https://d36g7qg6pk2cm7.cloudfront.net/assets/profile-f17aa1dfbd0cb562142f1dcb10bb7ad33e1ac8417ad29a1cdab7dfbfbbfe2f15.png"
+
+  let name = document.createElement("p").innerHTML = "  Atul Kumar";
+
+  name.innerHTML = "   " +  JSON.parse(localStorage.getItem("loginData")).name;
+
+  name.style.color = "black"
+
+  img.style.width = "45px";
+  img.style.margin = "auto";
+
+  box.style.marginRight = "15px"
+
+  box.append(img,name);
+
+  return false;
+}
