@@ -2,14 +2,12 @@ import { navbar } from "./Components/navbar.js";
 import { footer } from "./Components/footer.js";
 
 let navbar_div = document.getElementById("navbar-container");
-
-let difference, time;
-
 navbar_div.innerHTML = navbar();
 
 let footer_div = document.getElementById("footer");
-
 footer_div.innerHTML = footer();
+
+let difference, time;
 
 let data = JSON.parse(localStorage.getItem("bookingDate"));
 console.log(data);
@@ -82,6 +80,8 @@ const showData = (data1) => {
   let price = document.createElement("h4");
   price.innerHTML = "₹ " + price_cal;
 
+  localStorage.setItem("price", JSON.stringify(price_cal))
+
   booking_div.append(pickup_time, pickDate, dropof_time, dropDate);
   booking_div.classList.add("booking_div");
 
@@ -97,3 +97,4 @@ function SplitTime(numberOfHours) {
   var Hours = Math.floor(Remainder);
   return `Days ${Days} Hours ${Hours}`;
 }
+

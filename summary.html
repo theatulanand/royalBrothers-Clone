@@ -13,16 +13,56 @@
 <body>
 
     <div id="navbar-container"></div>
-
-    <div id="payment-container">
-        <h2 style="text-align: center;margin-top: 30px;padding-top:10px;">Payment Details</h2>
-    </div>
-
     <div class="yellow_bar">Now rent two wheelers for <strong> 7 days </strong> at a lower special price </div>
 
+
+    <div id="payment-container">
+        <div id="summary">
+            <div id="bike_image">
+                <h2>SUMMARY</h2>
+
+            </div>
+            
+            <div id="filter-date">
+                <div class="pickup-details">
+                    <label for="">Pickup date</label>
+                    <label for="">Time</label>
+                    <div class="pickupd"></div>
+                    <div class="pickupt"></div>
+                </div>
+
+                <div class="dropoff-details">
+                    <label for="">Dropoff date</label>
+                    <label for="">Time</label>
+                    <div class="dropoffd"></div>
+                    <div class="dropofft"></div>
+                </div>
+
+                <div id="address">
+                    <p>Vishalpur (Nehru Bridge Corner)</p>
+                    <p>B 429, Sakar-7 Ashram Rd, Vishalpur, Nehru Bridge Corner, Ahmedabad, Gujarat 380009</p>
+                </div>
+
+               
+                <div class="km_limit"></div>
+                <div class="excess_km"></div>
+                <div class="price"></div>
+        </div>
+        </div>
+
+        <div id="checkout">
+            <h2>CHECKOUT</h2>
+            <div class="booking_fee">
+                <div class="booking_price"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+   
     <div id="footer"></div>
 
-    <script src="paymentPage.js" type="module"></script>
+    <script src="summary.js" type="module"></script>
     
 </body>
 </html>
