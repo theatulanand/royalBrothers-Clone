@@ -211,7 +211,7 @@ function verifyData(data){
             localStorage.setItem("login","true");
     
             isLogin = true;
-            alert("Login Success");
+            // alert("Login Success");
 
             window.location.href = "./index.html";
             return false;
