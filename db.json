@@ -386,6 +386,20 @@
       "mobile": "9117903125",
       "password": "121312342",
       "id": 5
+    },
+    {
+      "name": "Atul Kumar",
+      "email": "atul@jjoijsf.com",
+      "mobile": "9117903125",
+      "password": "eghjggfda",
+      "id": 6
+    },
+    {
+      "name": "Atul Kumar",
+      "email": "atul@gmail.com",
+      "mobile": "9117903125",
+      "password": "Atul@123",
+      "id": 7
     }
   ]
 }

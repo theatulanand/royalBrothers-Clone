@@ -154,3 +154,9 @@ function slidestart() {
 
 }
 slidestart();
+
+document.getElementById("headerButton").addEventListener("click",function(){
+    event.preventDefault();
+
+    window.location.href = "./auth.html"
+})
