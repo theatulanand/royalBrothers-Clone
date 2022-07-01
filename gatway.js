@@ -95,8 +95,8 @@
     function changeNav(){
         let box = document.getElementById("navLoginSignup");
     
-        document.getElementById("signup").style.display = "none";
-        document.getElementById("login").style.display = "none";
+        // document.getElementById("signup").style.display = "none";
+        // document.getElementById("login").style.display = "none";
     
         let img = document.createElement("img");
     

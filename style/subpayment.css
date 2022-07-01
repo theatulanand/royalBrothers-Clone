@@ -1,0 +1,534 @@
+#payment-container{
+    width: 40%;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 550px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+#payment-container img{
+    margin-left: 200px;
+}
+#left-right{
+    display: flex;
+    justify-content: space-around;
+}
+#total{
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid gray;
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    padding-top: 20px;
+    font-weight: bold;
+}
+#payment_button{
+    width: 90%;
+    height: 40px;
+    background-color: #fed250;
+    margin: 30px 20px 0px 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+/* footer part */
+
+body{
+    font-family: "Muli", sans-serif;
+}
+
+#footer{
+    background-color: rgb(49, 48, 48);
+    font-family: "Muli", sans-serif;
+}
+
+#footerfirst-part{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    padding-top: 50px;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 60px;
+    padding-right: 80px;
+    justify-content: space-between;
+    padding-right: -80px;
+    column-gap: 230px;
+}
+
+#footerfirst-part>div>p{
+    color: aliceblue;
+}
+#footerfirst-part>div>hr{
+    width: 60px;
+    height: 2px;
+    background-color: #fed250;
+    margin-top: -20px;
+    margin-left: -2px;
+    margin-bottom: 40px;
+}
+#footerfirst-part>div>h3{
+    color: rgb(205, 211, 216);
+}
+
+#footer-logo{
+display: flex;
+}
+#footer-logo>img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 14px;
+}
+.footer-bold{
+    font-weight: bold;
+    font-size : 22px;
+    color: aliceblue;
+    cursor: pointer;;
+}
+#footersecond-part{
+  
+    background-color: rgb(69, 68, 67);
+}
+
+#secondpart-one{
+    width: 85%;
+    margin: auto;
+    
+}
+#secondpart-one>h1{
+    
+    color: rgb(249, 240, 240);
+    padding-top: 50px;
+
+}
+#secondpart-one>p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+}
+#secondpart-second{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+#secondpart-second>div>h1{
+    text-align: center;
+    color: rgb(249, 240, 240);
+}
+#secondpart-second>div>hr{
+    color: white;
+    height: 2px;
+    width: 90px;
+    margin-top: -18px;
+    background-color: #fed250
+    
+}
+#secondpart-second>div>p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+#secondpart-h3{
+    color: aliceblue;
+    text-align: center;
+    margin-top: -25px;
+    padding-bottom: 20px;
+}
+
+#footersecond-part #secondpart-second p{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-second .footer-bold{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-one p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+#footersecond-part #secondpart-one h1{
+    font-size: 20px;
+}
+
+#secondpart-second #ourPresence{
+    font-size: 22px;
+}
+
+
+body {
+    font-family: "Muli", sans-serif;
+    margin: 0px;
+}
+
+#navbarContainer {
+    display: flex;
+    width: 100%;
+    /* padding: 10px; */
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin: auto;
+    color: #333;
+    margin-top: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: fixed;
+    background-color: white;
+    margin-top: -100px;
+}
+
+#navLogoDiv {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#navOptions {
+    display: flex;
+    width: 49%;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+#navOptions div {
+    padding: 20px;
+}
+
+#navOptions div:hover {
+    cursor: pointer;
+    background-color: #fed250;
+}
+
+#navLoginSignup {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 40%;
+    justify-content: space-between;
+    padding: 13px;
+    align-items: center;
+}
+
+#navRight {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 25%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#navLoginSignup #signup {
+    background-color: #fed250;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#navLoginSignup #login {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#navLoginSignup #login:hover {
+    background-color: #9999;
+}
+
+#navLocation {
+    width: auto;
+    /* border: 1px solid red; */
+    text-align: center;
+    border: 1px solid #fed250;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    height: 40px;
+    padding-right: 15px;
+}
+
+#navLocation:hover {
+    background-color: #fed250;
+}
+
+#navLocation button {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(70, 70, 70, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgb(241, 241, 241);
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+    height: 500px;
+    overflow-y: scroll;
+    /* overflow-y: hidden; */
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modelTop {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#modelTop img {
+    width: 90px;
+}
+
+#modelSearch {
+    display: flex;
+    border-radius: 8px;
+    width: 100%;
+    background-color: white;
+    padding: 6px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#modelSearch img {
+    width: 24px;
+    margin-left: 20px;
+}
+
+#modelSearch input {
+    border: none;
+    font-size: 17px;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+#modelSearch input:focus {
+    outline: none !important;
+}
+
+#modelCity {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#modelCity img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#cityDiv img:hover{
+    transform: scale(1.09);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+}
+
+
+
+/* #footer *{
+    border: 1px solid red ;
+} */
+
+#footer{
+    background-color: rgb(49, 48, 48);
+    font-family: "Muli", sans-serif;
+    margin-top: 80px;
+}
+
+.footerfirst-part{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 2.5rem 7.5rem;
+    place-items: left;
+
+}
+
+.download-app{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contact_details{
+    color: #ddd;
+    display: flex;
+    text-decoration: none;
+    gap: 20px;
+    font-size: 0.8rem;
+}
+
+.royal_brothers_contact a{
+    padding-bottom: 20px;
+}
+
+.footerfirst-part h3::after{
+    content: "";
+    display: block;
+    height: 0.1563em;
+    background-color: #fed250;
+    width: 3.5em;
+    margin-top: 0.5em;
+}
+
+.footerfirst-part h3{
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.footerfirst-part ul li{
+    color: #ddd;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+#footer-logo{
+    display: flex;
+    place-items: flex-start;
+}
+
+#footer-logo img{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+#footersecond-part{
+    background-color: rgb(69, 68, 67);
+}
+
+#secondpart-one{
+    width: 85%;
+    margin: auto;
+    
+}
+#secondpart-one h1{
+    color: rgb(249, 240, 240);
+    padding-top: 50px;
+
+}
+#secondpart-one p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+}
+#secondpart-second{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+
+#secondpart-second div h3{
+    margin: 2rem;
+    text-align: center;
+    color: rgb(249, 240, 240);
+}
+#secondpart-second div h3::after{
+    content: "";
+    display: block;
+    height: 0.1563em;
+    background-color: #fed250;
+    width: 3.5em;
+    margin-top: 0.5em;
+    place-items: center;
+    margin: auto;
+}
+
+
+#secondpart-second div p{
+    color:rgb(223, 217, 217);
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+#secondpart-h3{
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: -45px;
+    font-size: 1.0rem;
+    font-weight: 400;
+}
+
+#secondpart-h3 img{
+    width: 20px;
+}
+
+#footersecond-part #secondpart-second p{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-second .footer-bold{
+    font-size: 15px;
+}
+
+#footersecond-part #secondpart-one p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+#footersecond-part #secondpart-one h1{
+    font-size: 20px;
+}
+
+#secondpart-second #ourPresence{
+    font-size: 22px;
+}

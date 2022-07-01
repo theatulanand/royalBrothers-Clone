@@ -386,6 +386,193 @@
       "mobile": "9117903125",
       "password": "121312342",
       "id": 5
+    },
+    {
+      "name": "",
+      "email": "",
+      "mobile": "",
+      "password": "",
+      "id": 6
+    },
+    {
+      "name": "Chinni",
+      "email": "enjarappachinni2001@gmail.com",
+      "mobile": "63668908417",
+      "password": "1234",
+      "id": 7
+    }
+  ],
+  "scooties": [
+    {
+      "id": 1,
+      "title": "Ather 450X",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/327/medium/ATHER_1-2.jpg",
+      "month": [
+        "₹7471",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Honda Activa 4G",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/121/medium/Activa_48-min_2.png",
+      "month": [
+        "₹3165",
+        "₹ 5"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Honda Dio",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/035/medium/Dio-min_2.png",
+      "month": [
+        "₹4123",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Honda Activa 5G",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png",
+      "month": [
+        "₹5195",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Honda Activa 6G",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/272/medium/activa_with_label.png",
+      "month": [
+        "₹7971",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "TVS XL Heavy duty",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/037/medium/TVS--XL.._..png",
+      "month": [
+        "₹4571",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Honda Dio",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/035/medium/Dio-min_2.png",
+      "month": [
+        "₹4123",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Honda Activa 5G",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png",
+      "month": [
+        "₹5195",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Honda Activa 6G",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/272/medium/activa_with_label.png",
+      "month": [
+        "₹7971",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "TVS XL Heavy duty",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/037/medium/TVS--XL.._..png",
+      "month": [
+        "₹4571",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Ather 450X",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/327/medium/ATHER_1-2.jpg",
+      "month": [
+        "₹7471",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Honda Activa 4G",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/121/medium/Activa_48-min_2.png",
+      "month": [
+        "₹3165",
+        "₹ 5"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Honda Activa 5G",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png",
+      "month": [
+        "₹5195",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Honda Activa 6G",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/272/medium/activa_with_label.png",
+      "month": [
+        "₹7971",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "TVS XL Heavy duty",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/037/medium/TVS--XL.._..png",
+      "month": [
+        "₹4571",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Honda Dio",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/035/medium/Dio-min_2.png",
+      "month": [
+        "₹4123",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Honda Activa 5G",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png",
+      "month": [
+        "₹5195",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Honda Activa 6G",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/272/medium/activa_with_label.png",
+      "month": [
+        "₹7971",
+        "₹ 3"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "TVS XL Heavy duty",
+      "url": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/037/medium/TVS--XL.._..png",
+      "month": [
+        "₹4571",
+        "₹ 3"
+      ]
     }
   ]
 }

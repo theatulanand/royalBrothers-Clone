@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTP Auth</title>
+    <title>paymentPage</title>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="./style/otpAuth.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/subpayment.css">
+    <!-- <link rel="stylesheet" href="./style/footer.css"> -->
+    <!-- <link rel="stylesheet" href="./style/nav.css"> -->
 </head>
-
 <body>
+    <!-- navbar -->
     <div id="navbarContainer">
         <div id="navLogoDiv">
             <a href="index.html"> <img src="https://i.ibb.co/WK768hX/download.png" alt="logo" id="navLogo"> </a>
@@ -29,16 +30,14 @@
             </div>
             <div>Careers</div>
             <div> <a href="offer.html">Offers</a></div>
-         
             <div style="display: flex;">Partner with us &nbsp;
                 <i class="fa fa-angle-down"> </i>
             </div>
         </div>
         <div id="navRight">
             <div id="navLoginSignup">
-               <a href="./auth.html"><div id="login">Login</div> </a> 
-                <a href="./auth.html"><div id="signup">Signup</div> </a>
-              
+               <a href="./auth.html"> <div id="login">Login</div> </a>
+               <a href="./auth.html"> <div id="signup">Signup</div> </a>
             </div>
             <div id="navLocation" style="cursor: pointer;">
                 <img src="https://i.ibb.co/N160zRK/location.png" alt="">
@@ -74,69 +73,58 @@
 
         </div>
     </div>
-
-    <div style="padding-top: 100px; text-align: center;" id="otpContainer">
-        <div id="container">
-            <h1>Verify OTP</h1>
-            <img style="width: 200px;" src="https://thumbs.dreamstime.com/b/otp-one-time-password-secure-transaction-digital-payment-mobile-app-smartphone-screen-step-verification-vector-illustration-244515551.jpg" alt="">
-            <h5>OTP successfully send to your registered mobile number</h5>
-            <div id="formContainer">
-                <form id="otpForm">
-                    <input type="number" id="otp" placeholder="Enter six digits OTP">
-                    <input type="submit" id="submit" onclick="goTOSuccess()" value="Submit">
-                </form>
-            </div>
-        </div>
+    
+    <div id="payment-container">
+        <h2 style="text-align: center;margin-top: 30px;padding-top:10px;">Payment Details</h2>
     </div>
 
+    <!-- footerPart -->
     <div id="footer">
-        <div class="footerfirst-part">
-            <div class="royal_brothers_contact">
-                <h3>ROYAL BROTHERS</h3>
-                <a class="contact_details" href="mailto:support@royalbrothers.com" target="_blank">
+        <div id="footerfirst-part">
+            <div >
+                <h3 style = "font-size: 17px">ROYAL BROTHERS</h3>
+                <hr>
                 <img
                     src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/white-mail-f7a800f328eab451231c558115ad0067bdd6c5ba04b7acd19f22ae4036e702d1.png">
-                support@royalbrothers.com
-                </a>
-               <a class="contact_details">
+                <p style="margin-top: -23px;margin-left:50px;color: aliceblue;"> support@royalbrothers.com</p>
                 <img
                     src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/white-phone-d7daea12563d63fb4bd1cbb2fa0a824d19501def56934aff125e23343912895e.png">
-                +917795687594/+919019595595
-                </a>
+                <p style="margin-top: -23px;margin-left:50px;color: aliceblue;">+917795687594/+919019595595</p>
             </div>
 
-            <div class="company">
-                <h3>COMPANY</h3>
-                <ul>
-                    <li>About Us</li>
-                    <li>Blog</li>
-                    <li>Careers</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-
-            <div class="policies">
-                <h3>POLICIES</h3>
-                <ul>
-                    <li>Privacy Policy</li>
-                    <li>Terms & Conditions</li>
-                </ul>
+            <div style=" margin-left: -90px;">
+                <h3 style = "font-size: 17px">COMPANY</h3>
+                <hr>
+                <p style="font-size: 15px;">About Us</p>
+                <p style="font-size: 15px;">Blog</p>
+                <p style="font-size: 15px;">Careers </p>
+                <p style="font-size: 15px;">Contact Us</p>
             </div>
 
             <div>
-                <h3 >QUICK LINKS</h3>
-                <ul>
-                    <li>Tariff</li>
-                    <li>Offers</li>
-                    <li>Own a franchise</li>
-                    <li>Earn with us</li>
-                    <li>Indian bike routes</li>
-                </ul>
+                <h3 style = "font-size: 17px">POLICIES</h3>
+                <hr>
+                <p style="font-size: 15px;">Privacy Policy</p>
+                <p style="font-size: 15px;">Terms & Conditions</p>
+            </div>
+
+        </div>
+
+        <div id="footerfirst-part">
+            <div style="font-size: 17px;  width: 200px;">
+                <h3 style="font-size: 17px; ">QUICK LINKS</h3>
+                <hr>
+                <p style="font-size: 15px;">Tariff</p>
+                <p style="font-size: 15px;">Offers</p>
+                <p style="font-size: 15px;">Own a franchise</p>
+                <p style="font-size: 15px;">Earn with us</p>
+                <p style="font-size: 15px;">Indian bike routes</p>
 
             </div>
 
             <div>
-                <h3>FOLLOW US</h3>
+                <h3 style = "font-size: 17px">FOLLOW US</h3>
+                <hr>
                 <div id="footer-logo">
                     <img
                         src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Insta-e068316ffc568b3c0162ef129542c4ec473fedb2317cc8132168a07a0616b475.png">
@@ -149,19 +137,19 @@
                 </div>
             </div>
 
-            <div>
-                <h3 >DOWNLOAD OUR APP</h3>
-                <div class="download-app">
-                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/app_store-4407bc8ced0d52a50ff042ce51e32d51de3e11717955798ec54c6a28e7926c7c.png">
-                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/play_store-057f9061b4cd0fd4953a485569c15e63fdf8d89b0bcc025c04cfb34d9e8cd571.png">
+            <div style=" margin-left: -90px;">
+                <h3 style = "font-size: 17px">DOWNLOAD OUR APP</h3>
+                <hr>
+                <div id="footerdownload-app" style="display:flex">
+                    <img style="margin-right: 50px;"
+                        src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/app_store-4407bc8ced0d52a50ff042ce51e32d51de3e11717955798ec54c6a28e7926c7c.png">
+                    <img
+                        src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/play_store-057f9061b4cd0fd4953a485569c15e63fdf8d89b0bcc025c04cfb34d9e8cd571.png">
+
                 </div>
             </div>
 
         </div>
-
-        
-
-        
 
 
 
@@ -214,7 +202,9 @@
 
             <div id="secondpart-second">
                 <div>
-                    <h3 id = "ourPresence">OUR PRESENCE</h3>
+                    <h1 id = "ourPresence">OUR PRESENCE</h1>
+                    <hr>
+                    </hr>
                     <p>Bikes for rent in <span class="footer-bold">Agra .</span>
                         Bikes for rent in <span class="footer-bold">Ahmedabad . </span>
                         Bikes for rent in <span class="footer-bold">Agra .</span>
@@ -301,12 +291,18 @@
                         Bikes for rent in <span class="footer-bold">Vizag .</span>
                         Bikes for rent in <span class="footer-bold"> Wayanad .</span> </p>
                 </div>
+
             </div>
         </div>
-        <h3 id="secondpart-h3">Made with <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/like-b8b570f724101252e5c39d8bd66246607fb226e93e3ba17b0516209b20832345.png">
-            by team Royal Brothers</h3>
-        </div>
-</body>
-<script src="./otpAuth.js"></script>
 
+        <h3 id="secondpart-h3">Made with <img style="margin-bottom: -8px;"
+                src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/like-b8b570f724101252e5c39d8bd66246607fb226e93e3ba17b0516209b20832345.png">
+            by team Royal Brothers</h3>
+
+    </div>
+
+
+</body>
 </html>
+
+<script src="./scripts/subpayment.js"></script>
